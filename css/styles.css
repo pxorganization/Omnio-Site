@@ -11515,7 +11515,7 @@ body.dark-mode #team img {
 	-webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
 	-moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
 	box-shadow: 0 0 1px rgba(0,0,0,0.20);
-	
+	border-radius: 16px;
   z-index: 15;
 }
 
