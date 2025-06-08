@@ -12,11 +12,19 @@ document.addEventListener('DOMContentLoaded', () => {
         themeIcon.classList.remove('bi-brightness-high');
         themeIcon.classList.add('bi-moon-stars');
       }
+      if (themeToggle) {
+        themeToggle.classList.remove('btn-outline-secondary');
+        themeToggle.classList.add('btn-primary');
+      }
     } else {
       body.classList.remove('dark-mode');
       if (themeIcon) {
         themeIcon.classList.remove('bi-moon-stars');
         themeIcon.classList.add('bi-brightness-high');
+      }
+      if (themeToggle) {
+        themeToggle.classList.remove('btn-primary');
+        themeToggle.classList.add('btn-outline-secondary');
       }
     }
     localStorage.setItem('theme', mode);
@@ -48,4 +56,24 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+  const form = document.querySelector("form");
+  if (form) {
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: new FormData(form),
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+       if (response.ok) {
+      alert("Message sent successfully!");
+      form.reset();
+    } else {
+      alert("Error sending the message.");
+    }
+    });
+  }
 });

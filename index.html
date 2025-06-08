@@ -6,16 +6,16 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
   <title>Omnio</title>
-  <link rel="icon" type="image/x-icon" href="assets//img/favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- Bootstrap icons-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
   <!-- Google fonts-->
   <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
   <!-- Core theme CSS (includes Bootstrap)-->
   <link href="css/styles.css" rel="stylesheet" />
@@ -41,6 +41,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link me-lg-3" href="#why-it-matters">Why it matters</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link me-lg-3" href="#team">Our Team</a>
           </li>
@@ -67,15 +68,14 @@
             <p class="lead fw-normal text-muted mb-5">
                We help households and businesses reduce electricity costs and gain full control by automatically scheduling appliances when energy is cheapest.
             </p>
-            <!-- Removed download badges -->
           </div>
         </div>
         <div class="col-lg-6">
-          <!-- Laptop mockup with video overlay -->
+          <!-- Laptop mockup with image overlay -->
           <div class="laptop-mockup-wrapper" style="position: relative; max-width: 600px; margin: auto;">
             <!-- Laptop image -->
             <img src="assets/img/laptop_remove.png" alt="Laptop mockup" style="width: 100%; display: block;" />
-            <!-- Video overlay inside laptop screen -->
+            <!-- Image overlay inside laptop screen -->
             <div class="video-overlay" style="
               position: absolute;
               top: 17%;      
@@ -85,9 +85,7 @@
               overflow: hidden;
               border-radius: 8px;
             ">
-              <video autoplay muted loop style="width: 100%; height: 100%; object-fit: cover;">
-                <source src="assets/img/demo-screen.mp4" type="video/mp4" />
-              </video>
+              <img src="assets/img/demo-screen.jpg" alt="Demo screen" style="width: 100%; height: 100%;" />
             </div>
           </div>
         </div>
@@ -109,117 +107,100 @@
   </aside>
 
   <!-- App features section-->
+  <!-- App features section-->
   <section id="how-it-works" class="bg-light border-bottom">
-    <div class="container px-5">
-      <h2 class="display-4 lh-1 mb-4 text-center">How it works</h2>
-      <div class="row gx-5 align-items-center">
-        <!-- Features left -->
-        <div class="col-lg-8">
-          <div class="container-fluid px-5">
-            <div class="row gx-5">
-              <div class="col-md-6 mb-5">
-                <div class="text-center">
-                  <img src="assets/img/optimization.png" alt="Laptop mockup" style="width: 20%; padding: 40px 0px 20px 0px;" />
-                  <h3 class="font-alt">Optimize</h3>
-                  <p class="text-muted mb-0">We generate the most cost-efficient weekly schedule based on your preferences, needs, and device availability.</p>
-                </div>
-              </div>
-              <div class="col-md-6 mb-5">
-                <div class="text-center">
-                  <img src="assets/img/optimization.png" alt="Laptop mockup" style="width: 20%; padding: 40px 0px 20px 0px;" />
-                  <h3 class="font-alt">Adapt in Real Time</h3>
-                  <p class="text-muted mb-0">As prices and conditions change, the schedule is automatically adjusted to ensure continuous savings and optimal load distribution.</p>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6 mb-5 mb-md-0">
-                <div class="text-center">
-                  <img src="assets/img/optimization.png" alt="Laptop mockup" style="width: 20%; padding: 40px 0px 20px 0px;" />
-                  <h3 class="font-alt">Simple & Accessible</h3>
-                  <p class="text-muted mb-0">You don't need technical knowledge—just tell us your device preferences, and we handle the rest.</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="text-center">
-                  <img src="assets/img/optimization.png" alt="Laptop mockup" style="width: 20%; padding: 40px 0px 20px 0px;" />
-                  <h3 class="font-alt">Report</h3>
-                  <p class="text-muted mb-0">Get clear insights into your energy usage, cost savings, and sustainability impact.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+  <div class="container px-4 py-5">
+    <h2 class="display-4 lh-1 mb-4 text-center">How It Works</h2>
+    <div class="row g-3">
+      <!-- Feature 1: Optimize (Left-aligned, wider card) -->
+      <div class="col-lg-7">
+        <div style="background: #ffffff; border-left: 4px solid #fd7e14; padding: 20px 25px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+          <h3 class="font-alt mb-2" style="font-size: 1.5rem; color: #333;">Optimize</h3>
+          <p class="text-muted mb-0" style="font-size: 1rem; line-height: 1.5;">
+            Omnio crafts a cost-efficient weekly schedule tailored to your preferences and device availability, maximizing savings by using electricity when prices are lowest.
+          </p>
         </div>
-        <!-- Laptop mockup right -->
-        <div class="col-lg-4 mb-5 mb-lg-0">
-          <div class="laptop-mockup-wrapper" style="position: relative; max-width: 100%; margin: auto;">
-            <img src="assets/img/laptop_remove.png" alt="Laptop mockup" style="width: 100%; display: block;" />
-            <div class="video-overlay" style="
-              position: absolute;
-              top: 17%;
-              left: 11%;
-              width: 78%;
-              height: 53%;
-              overflow: hidden;
-              border-radius: 8px;
-            ">
-              <video autoplay muted loop style="width: 100%; height: 100%; object-fit: cover;">
-                <source src="assets/img/demo-screen.mp4" type="video/mp4" />
-              </video>
-            </div>
-          </div>
+      </div>
+      <!-- Feature 2: Adapt in Real Time (Right-aligned, narrower card) -->
+      <div class="col-lg-5">
+        <div style="background: #ffffff; border-right: 4px solid #fd7e14; padding: 20px 25px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-top: 20px;">
+          <h3 class="font-alt mb-2" style="font-size: 1.5rem; color: #333;">Adapt in Real Time</h3>
+          <p class="text-muted mb-0" style="font-size: 1rem; line-height: 1.5;">
+            Omnio dynamically adjusts your schedule as energy prices and conditions change, ensuring continuous savings and optimal load distribution.
+          </p>
+        </div>
+      </div>
+      <!-- Feature 3: Simple & Accessible (Left-aligned, medium card) -->
+      <div class="col-lg-6">
+        <div style="background: #ffffff; border-left: 4px solid #fd7e14; padding: 20px 25px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-top: 20px;">
+          <h3 class="font-alt mb-2" style="font-size: 1.5rem; color: #333;">Simple & Accessible</h3>
+          <p class="text-muted mb-0" style="font-size: 1rem; line-height: 1.5;">
+            No technical skills needed—input your device preferences, and Omnio manages everything, making energy optimization effortless.
+          </p>
+        </div>
+      </div>
+      <!-- Feature 4: Report (Right-aligned, wider card) -->
+      <div class="col-lg-6">
+        <div style="background: #ffffff; border-right: 4px solid #fd7e14; padding: 20px 25px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-top: 20px;">
+          <h3 class="font-alt mb-2" style="font-size: 1.5rem; color: #333;">Report</h3>
+          <p class="text-muted mb-0" style="font-size: 1rem; line-height: 1.5;">
+            Omnio provides clear insights into energy usage, cost savings, and sustainability impact through intuitive reports, empowering smarter decisions.
+          </p>
         </div>
       </div>
     </div>
-  </section>
-  <section id="why-it-matters" class="bg-light border-bottom">
-    <div class="container px-5">
-      <h2 class="display-4 lh-1 mb-4 text-center">Why It Matters</h2>
-      <div class="row gx-5 align-items-center">
-        <div class="col-lg-4 mb-5 mb-lg-0">
-          <div class="laptop-mockup-wrapper" style="position: relative; max-width: 100%; margin: auto;">
-            <img src="assets/img/laptop_remove.png" alt="Laptop mockup" style="width: 100%; display: block;" />
-            <div class="video-overlay" style="
-              position: absolute;
-              top: 17%;
-              left: 11%;
-              width: 78%;
-              height: 53%;
-              overflow: hidden;
-              border-radius: 8px;
-            ">
-              <video autoplay muted loop style="width: 100%; height: 100%; object-fit: cover;">
-                <source src="assets/img/demo-screen.mp4" type="video/mp4" />
-              </video>
-            </div>
+  </div>
+</section>
+  <section id="why-it-matters" class="bg-light py-5">
+  <div class="container px-5">
+    <h2 class="display-4 lh-1 mb-5 text-center" style="color: #1f1f1f; font-weight: 700; letter-spacing: -0.02em;">Why It Matters</h2>
+    <div class="row g-4 text-center">
+      <!-- Save Money -->
+      <div class="col-md-4">
+        <div style="background: linear-gradient(145deg, #ffffff, #f8f9fa); border-radius: 12px; padding: 25px 20px; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.08); position: relative; overflow: hidden;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.08)';">
+          <div style="width: 70px; height: 70px; background: #ff6d2e; border-radius: 50%; margin: 0 auto 15px; display: flex; align-items: center; justify-content: center;">
+            <img src="assets/img/lowprice.png" alt="Save Money" style="width: 40px; height: 40px; object-fit: contain;" />
           </div>
+          <h4 class="font-alt mb-2" style="color: #1f1f1f; font-size: 1.3rem; font-weight: 600;">Save Money</h4>
+          <p style="color: #4a4a4a; font-size: 0.95rem; line-height: 1.6; margin: 0;">
+            Electricity prices fluctuate. We schedule appliances to run when costs are lowest, saving you money effortlessly.
+          </p>
+          <div style="position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(to right, #ff6d2e, transparent);"></div>
         </div>
-        <!-- Features left -->
-        <div class="col-lg-8">
-          <div class="container-fluid px-5">
-            <div class="row gx-5">  
-              <div class="col-md-6 mb-5">
-                <div class="text-center">
-                  <img src="assets/img/lowprice.png" alt="save-picture" style="width: 20%; padding: 40px 0px 20px 0px;" />
-                  <h3 class="font-alt">Save Money</h3>
-                  <p class="text-muted mb-0">Dynamic pricing makes electricity cheaper at specific times. We ensure you use power when it costs less.</p>
-                </div>
-              </div>
-              <div class="col-md-6 mb-5">
-                <div class="text-center">
-                  <img src="assets/img/controller.png" alt="control-picture" style="width: 20%; padding: 40px 0px 20px 0px;" />
-                  <h3 class="font-alt">Stay in Control</h3>
-                  <p class="text-muted mb-0">Whether you're managing one home or hundreds of devices, you stay fully informed with our intuitive dashboards.</p>
-                </div>
-              </div>
-            </div>
+      </div>
+      <!-- Stay in Control -->
+      <div class="col-md-4">
+        <div style="background: linear-gradient(145deg, #ffffff, #f8f9fa); border-radius: 12px; padding: 25px 20px; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.08); position: relative; overflow: hidden;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.08)';">
+          <div style="width: 70px; height: 70px; background: #ff6d2e; border-radius: 50%; margin: 0 auto 15px; display: flex; align-items: center; justify-content: center;">
+            <img src="assets/img/controller.png" alt="Stay in Control" style="width: 40px; height: 40px; object-fit: contain;" />
           </div>
+          <h4 class="font-alt mb-2" style="color: #1f1f1f; font-size: 1.3rem; font-weight: 600;">Stay in Control</h4>
+          <p style="color: #4a4a4a; font-size: 0.95rem; line-height: 1.6; margin: 0;">
+            Set your preferences and monitor everything with real-time dashboards that keep you informed and in charge.
+          </p>
+          <div style="position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(to right, #ff6d2e, transparent);"></div>
+        </div>
+      </div>
+      <!-- See What You Pay -->
+      <div class="col-md-4">
+        <div style="background: linear-gradient(145deg, #ffffff, #f8f9fa); border-radius: 12px; padding: 25px 20px; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.08); position: relative; overflow: hidden;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.08)';">
+          <div style="width: 70px; height: 70px; background: #ff6d2e; border-radius: 50%; margin: 0 auto 15px; display: flex; align-items: center; justify-content: center;">
+            <img src="assets/img/bill.png" alt="See What You Pay" style="width: 40px; height: 40px; object-fit: contain;" />
+          </div>
+          <h4 class="font-alt mb-2" style="color: #1f1f1f; font-size: 1.3rem; font-weight: 600;">View Your Costs</h4>
+          <p style="color: #4a4a4a; font-size: 0.95rem; line-height: 1.6; margin: 0;">
+            Track energy usage and savings with hourly, euro-level transparency for complete clarity.
+          </p>
+          <div style="position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(to right, #ff6d2e, transparent);"></div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
   <!-- The Timeline -->
    <br><br><br>
+  <h2 class="display-4 lh-1 mb-4 text-center">Our Journey</h2>
   <ul class="timeline">
     <!-- Item 1 -->
     <li>
@@ -253,93 +234,94 @@
     </li>
   </ul>
   <br><br><br>
+  <div class="border-bottom"></div>
   <!-- Our Team section-->
-  <section id="team" class="bg-white border-bottom">
-    <div class="container px-5">
-      <h2 class="display-4 lh-1 mb-4 text-center">Our Team</h2>
-      <div class="row gx-5 justify-content-center">
-        <!-- Example team members, adjust as needed -->
-        <div class="col-md-4 mb-4 text-center">
-          <img src="assets/profileimages/panos.jpg" alt="Team Member 1" class="rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
-          <h5 class="fw-bold mb-1">Panagiotis Mavrikos</h5>
-          <p class="text-muted mb-0">Software Engineering</p>
-          <div class="team-social">
-            <a href="https://www.linkedin.com/in/panagiotis-mavrikos/" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+  <section id="team" class="bg-white py-5">
+  <div class="container px-5">
+    <h2 class="display-4 lh-1 mb-5 text-center" style="color: #1f1f1f; font-weight: 700; letter-spacing: -0.02em;">Our Team</h2>
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(180deg, rgba(255, 109, 46, 0.1), transparent 50%); z-index: 0;"></div>
+    <div class="row g-4" style="position: relative; z-index: 1;">
+      <!-- Team Member 1: Panagiotis Mavrikos -->
+      <div class="col-md-4 text-center">
+        <div style="transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-8px)';" onmouseout="this.style.transform='translateY(0)';">
+          <div style="position: relative; width: 130px; height: 130px; margin: 0 auto 15px;">
+            <img src="assets/profileimages/panos.jpg" alt="Panagiotis Mavrikos" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%; border: 3px solid #1f1f1f; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.08)';" onmouseout="this.style.transform='scale(1)';"/>
+            <div style="position: absolute; top: -5px; left: -5px; width: 140px; height: 140px; border-radius: 50%; background: radial-gradient(circle, rgba(0, 0, 0, 0.2), transparent); z-index: -1;"></div>
           </div>
+          <h5 style="color: #1f1f1f; font-size: 1.25rem; font-weight: 600; margin-bottom: 5px;">Panagiotis Mavrikos</h5>
+          <p style="color: #ff6d2e; font-size: 0.95rem; font-weight: 500; margin-bottom: 8px;">Software Engineering</p>
+          <p style="color: #4a4a4a; font-size: 0.9rem; line-height: 1.5; margin: 0 auto 10px; max-width: 80%;">Leads the development of Omnio’s core platform, ensuring seamless integration and robust performance for energy optimization.</p>
+          <a href="https://www.linkedin.com/in/panagiotis-mavrikos/" target="_blank" aria-label="LinkedIn" style="color: #ff6d2e; font-size: 1.2rem; transition: color 0.3s ease;" onmouseover="this.style.color='#1f1f1f';" onmouseout="this.style.color='#ff6d2e';"><i class="bi bi-linkedin"></i></a>
         </div>
-        <div class="col-md-4 mb-4 text-center">
-          <img src="assets/profileimages/dionisia.jpg" alt="Team Member 2" class="rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
-          <h5 class="fw-bold mb-1">Dionisia Koronellou</h5>
-          <p class="text-muted mb-0">Business Development</p>
-          <div class="team-social">
-            <a href="hhttps://www.linkedin.com/in/dionisia-koronellou-75200b331/" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <!-- Team Member 2: Dionisia Koronellou -->
+      <div class="col-md-4 text-center">
+        <div style="transition: transform 0.3s ease; transform: translateY(20px);" onmouseover="this.style.transform='translateY(12px)';" onmouseout="this.style.transform='translateY(20px)';">
+          <div style="position: relative; width: 130px; height: 130px; margin: 0 auto 15px;">
+            <img src="assets/profileimages/dionisia.jpg" alt="Dionisia Koronellou" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%; border: 3px solid #1f1f1f; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.08)';" onmouseout="this.style.transform='scale(1)';"/>
+            <div style="position: absolute; top: -5px; left: -5px; width: 140px; height: 140px; border-radius: 50%; background: radial-gradient(circle, rgba(255, 109, 46, 0.2), transparent); z-index: -1;"></div>
           </div>
+          <h5 style="color: #1f1f1f; font-size: 1.25rem; font-weight: 600; margin-bottom: 5px;">Dionisia Koronellou</h5>
+          <p style="color: #ff6d2e; font-size: 0.95rem; font-weight: 500; margin-bottom: 8px;">Business Development</p>
+          <p style="color: #4a4a4a; font-size: 0.9rem; line-height: 1.5; margin: 0 auto 10px; max-width: 80%;">Drives Omnio’s market strategy, forging partnerships and expanding our reach to households and businesses.</p>
+          <a href="https://www.linkedin.com/in/dionisia-koronellou-75200b331/" target="_blank" aria-label="LinkedIn" style="color: #ff6d2e; font-size: 1.2rem; transition: color 0.3s ease;" onmouseover="this.style.color='#1f1f1f';" onmouseout="this.style.color='#ff6d2e';"><i class="bi bi-linkedin"></i></a>
         </div>
-        <div class="col-md-4 mb-4 text-center">
-          <img src="assets/profileimages/xristos.jpg" alt="Team Member 3" class="rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
-          <h5 class="fw-bold mb-1">Christos Ioannidis</h5>
-          <p class="text-muted mb-0">AI Engineering</p>
-          <div class="team-social">
-            <a href="https://www.linkedin.com/in/christos-ioannidis-942bb6b8/" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <!-- Team Member 3: Christos Ioannidis -->
+      <div class="col-md-4 text-center">
+        <div style="transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-8px)';" onmouseout="this.style.transform='translateY(0)';">
+          <div style="position: relative; width: 130px; height: 130px; margin: 0 auto 15px;">
+            <img src="assets/profileimages/xristos.jpg" alt="Christos Ioannidis" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%; border: 3px solid #1f1f1f; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.08)';" onmouseout="this.style.transform='scale(1)';"/>
+            <div style="position: absolute; top: -5px; left: -5px; width: 140px; height: 140px; border-radius: 50%; background: radial-gradient(circle, rgba(255, 109, 46, 0.2), transparent); z-index: -1;"></div>
           </div>
+          <h5 style="color: #1f1f1f; font-size: 1.25rem; font-weight: 600; margin-bottom: 5px;">Christos Ioannidis</h5>
+          <p style="color: #ff6d2e; font-size: 0.95rem; font-weight: 500; margin-bottom: 8px;">AI Engineering</p>
+          <p style="color: #4a4a4a; font-size: 0.9rem; line-height: 1.5; margin: 0 auto 10px; max-width: 80%;">Designs Omnio’s AI algorithms, optimizing energy schedules for efficiency and real-time adaptability.</p>
+          <a href="https://www.linkedin.com/in/christos-ioannidis-942bb6b8/" target="_blank" aria-label="LinkedIn" style="color: #ff6d2e; font-size: 1.2rem; transition: color 0.3s ease;" onmouseover="this.style.color='#1f1f1f';" onmouseout="this.style.color='#ff6d2e';"><i class="bi bi-linkedin"></i></a>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Contact section-->
-  <section id="contact" class="bg-light">
-    <div class="container px-5">
-      <h2 class="display-4 lh-1 mb-4 text-center">Contact Us</h2>
-      <p class="lead fw-normal text-muted mb-5 text-center">
-        Contact with us for more information.
-      </p>
-      <form id="contactForm" data-sb-form-api-token="API_TOKEN" style="max-width: 600px; margin: 0 auto;">
-        <div class="form-floating mb-3">
-          <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-          <label for="name">Full name</label>
-          <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-        </div>
-        <div class="form-floating mb-3">
-          <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-          <label for="email">Email address</label>
-          <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-          <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-        </div>
-        <div class="form-floating mb-3">
-          <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-          <label for="phone">Phone number</label>
-          <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-        </div>
-        <div class="form-floating mb-3">
-          <textarea class="form-control" id="message" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-          <label for="message">Message</label>
-          <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-        </div>
-        <div class="d-none" id="submitSuccessMessage">
-          <div class="text-center mb-3">
-            <div class="fw-bolder">Form submission successful!</div>
-            To activate this form, sign up at
-            <a href="https://startbootstrap.com/solution/contact-forms">SB Forms</a>
-          </div>
-        </div>
-        <div class="d-none" id="submitErrorMessage">
-          <div class="text-center text-danger mb-3">Error sending message!</div>
-        </div>
-        <div class="d-grid">
-          <button class="btn btn-primary rounded-pill btn-lg disabled" id="submitButton" type="submit">Submit</button>
-        </div>
-      </form>
-    </div>
-  </section>
+  <!-- Contact Section -->
+<section id="contact" class="bg-light">
+  <div class="container px-5">
+    <h2 class="display-4 lh-1 mb-4 text-center">Contact Us</h2>
+    <p class="lead fw-normal text-muted mb-5 text-center">
+      Contact with us for more information.
+    </p>
+    <form action="https://formspree.io/f/xanjeyep" method="POST" style="max-width: 600px; margin: 0 auto;">
+      <div class="form-floating mb-3">
+        <input class="form-control" id="name" name="name" type="text" required placeholder="Enter your name..." />
+        <label for="name">Full name</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input class="form-control" id="email" name="_replyto" type="email" required placeholder="name@example.com" />
+        <label for="email">Email address</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input class="form-control" id="phone" name="phone" type="tel" required placeholder="(123) 456-7890" />
+        <label for="phone">Phone number</label>
+      </div>
+      <div class="form-floating mb-3">
+        <textarea class="form-control" id="message" name="message" placeholder="Enter your message here..." style="height: 10rem" required></textarea>
+        <label for="message">Message</label>
+      </div>
+      <div class="d-grid">
+        <button class="btn btn-primary rounded-pill btn-lg" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</section>
 
   <!-- Footer-->
   <footer class="bg-black text-center py-5">
     <div class="container px-5">
       <div class="text-white-50 small">
-        <div class="mb-2">&copy; Omnio Website 2025. All Rights Reserved.</div>
-        <span class="mx-1">&middot;</span>
-        <a href="#!">FAQ</a>
+        <div class="mb-2">© Omnio Website 2025. All Rights Reserved.</div>
+        <span class="mx-1">·</span>
+        <a href="faq.html">FAQ</a>
       </div>    
     </div>
   </footer>

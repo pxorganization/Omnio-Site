@@ -2838,13 +2838,13 @@ textarea.form-control-lg {
   --bs-btn-color: #fff;
   --bs-btn-bg: #fd7e14;
   --bs-btn-border-color: #fd7e14;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #232fcc;
-  --bs-btn-hover-border-color: #212cc0;
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: #1f1f1f;
+  --bs-btn-hover-border-color: #000000;
   --bs-btn-focus-shadow-rgb: 73, 85, 242;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #212cc0;
-  --bs-btn-active-border-color: #1f29b4;
+  --bs-btn-active-bg: #fd7e14;
+  --bs-btn-active-border-color: hsl(0, 0%, 0%);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #fd7e14;
@@ -2988,19 +2988,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-secondary {
-  --bs-btn-color: #9f1ae2;
-  --bs-btn-border-color: #9f1ae2;
+  --bs-btn-color: #000000;
+  --bs-btn-border-color: #000000;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #9f1ae2;
-  --bs-btn-hover-border-color: #9f1ae2;
+  --bs-btn-hover-bg: #000000;
+  --bs-btn-hover-border-color: #fff;
   --bs-btn-focus-shadow-rgb: 159, 26, 226;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #9f1ae2;
-  --bs-btn-active-border-color: #9f1ae2;
+  --bs-btn-active-bg: #fd7e14;
+  --bs-btn-active-border-color: #fd7e14;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #9f1ae2;
+  --bs-btn-disabled-color: #fd7e14;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #9f1ae2;
+  --bs-btn-disabled-border-color: #fd7e14;
   --bs-gradient: none;
 }
 
@@ -10824,7 +10824,7 @@ html {
 }
 
 .bg-gradient-primary-to-secondary {
-  background: linear-gradient(45deg, #fd7e14, #1f1f1f) !important;
+  background: linear-gradient(45deg, #4a4a4a, #1f1f1f) !important;
 }
 
 .font-alt {
@@ -11233,8 +11233,8 @@ body.dark-mode .btn-primary {
   border-color: #ff6d2e;
 } 
 body.dark-mode .btn-primary:hover {
-  background-color: #1976d2;
-  border-color: #1976d2;
+  background-color: white;
+  border-color: white;
 }
 
 /* Footer */
@@ -11538,3 +11538,4 @@ body.dark-mode #team img {
 }
 
 }
+
