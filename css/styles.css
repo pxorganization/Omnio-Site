@@ -7654,7 +7654,7 @@ textarea.form-control-lg {
 }
 
 .mb-4 {
-  margin-bottom: 1.5rem !important;
+  margin-bottom: 3rem !important;
 }
 
 .mb-5 {
@@ -11160,7 +11160,7 @@ footer a:hover, footer a:active, footer a:focus {
   }
 }
 
-/* Βασικό dark mode */
+/* Basic dark mode */
 body.dark-mode {
   background-color: #121212;
   color: #e0e0e0;
@@ -11168,13 +11168,13 @@ body.dark-mode {
 
 /* Links */
 body.dark-mode a {
-  color: #fd7e14;
+  color: #fd7e14 !important;
 }
 body.dark-mode a:hover {
-  color: #99ccff;
+  color: #99ccff !important;
 }
 
-/* Navbar */ 
+/* Navbar */
 body.dark-mode .navbar {
   background-color: #212121 !important;
 }
@@ -11186,10 +11186,40 @@ body.dark-mode .navbar-brand:hover,
 body.dark-mode .nav-link:hover {
   color: #fd7e14 !important;
 }
+body.dark-mode .navbar-toggler {
+  color: #e0e0e0 !important;
+  border-color: #444 !important;
+}
+body.dark-mode .btn-outline-secondary {
+  border-color: #e0e0e0 !important;
+  color: #e0e0e0 !important;
+}
+body.dark-mode .btn-outline-secondary:hover {
+  border-color: #fd7e14 !important;
+  color: #fd7e14 !important;
+}
 
 /* Masthead */
 body.dark-mode .masthead {
   background-color: #1e1e1e !important;
+}
+body.dark-mode .masthead h1,
+body.dark-mode .masthead p {
+  color: #e0e0e0 !important;
+}
+body.dark-mode .masthead .video-overlay {
+  border-color: #444 !important;
+}
+
+/* Quote section */
+body.dark-mode aside {
+  background: linear-gradient(45deg, #2c2c2c, #1e1e1e) !important;
+}
+body.dark-mode aside .quote-text {
+  color: #e0e0e0 !important;
+}
+body.dark-mode aside .quote-text span {
+  color: #fd7e14 !important;
 }
 
 /* Sections */
@@ -11199,6 +11229,112 @@ body.dark-mode #team.bg-white {
 }
 body.dark-mode .bg-gradient-primary-to-secondary {
   background: linear-gradient(45deg, #2c2c2c, #1e1e1e) !important;
+}
+body.dark-mode section div[style*="background: #ffffff"] {
+  background: #2c2c2c !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) !important;
+}
+body.dark-mode #how-it-works div[style*="background: #ffffff"],
+body.dark-mode #how-it-works div[style*="background: #ffffff"]:hover,
+body.dark-mode #why-it-matters div[style*="background: #ffffff"],
+body.dark-mode #why-it-matters div[style*="background: #ffffff"]:hover {
+  background: #2c2c2c !important;
+}
+body.dark-mode section div[style*="border-left: 4px solid #2c2c2c"],
+body.dark-mode section div[style*="border-right: 4px solid #2c2c2c"] {
+  border-color: #fd7e14 !important;
+}
+
+/* Card hover effects */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+body.dark-mode .card,
+body.dark-mode .card:hover,
+body.dark-mode .card:active {
+  background: #2c2c2c !important;
+}
+
+/* How It Works section boxes */
+body.dark-mode #how-it-works h3,
+body.dark-mode #how-it-works p {
+  color: #ffffff !important;
+}
+body.dark-mode #how-it-works div[style*="background: #ffffff"]:hover h3,
+body.dark-mode #how-it-works div[style*="background: #ffffff"]:hover p {
+  color: #ffffff !important;
+}
+
+/* Why It Matters section boxes */
+body.dark-mode #why-it-matters h4,
+body.dark-mode #why-it-matters p {
+  color: #ffffff !important;
+}
+body.dark-mode #why-it-matters div[style*="background: #ffffff"]:hover h4,
+body.dark-mode #why-it-matters div[style*="background: #ffffff"]:hover p {
+  color: #ffffff !important;
+}
+body.dark-mode #why-it-matters div[style*="background: #ff6d2e"] {
+  background: #fd7e14 !important;
+}
+body.dark-mode #why-it-matters div[style*="background: #ff6d2e"]:hover {
+  background: #fd7e14 !important;
+}
+
+/* Timeline */
+body.dark-mode .timeline .flag,
+body.dark-mode .timeline .time {
+  background: #2c2c2c !important;
+  color: #e0e0e0 !important;
+}
+body.dark-mode .timeline .time {
+  color: #fd7e14 !important;
+}
+body.dark-mode .timeline .desc {
+  background: #2c2c2c !important;
+  color: #ffffff !important;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Team section */
+body.dark-mode #team {
+  color: #e0e0e0 !important;
+}
+body.dark-mode #team h5 {
+  color: #e0e0e0 !important;
+}
+body.dark-mode #team p:not([style*="color: #ff6d2e"]) {
+  color: #aaaaaa !important;
+}
+body.dark-mode #team img {
+  filter: brightness(0.8);
+  border-color: #444 !important;
+}
+body.dark-mode #team img:hover {
+  border-color: #fd7e14 !important;
+}
+body.dark-mode #team a {
+  color: #aaaaaa !important;
+}
+body.dark-mode #team a:hover {
+  color: #fd7e14 !important;
+}
+body.dark-mode #team div[style*="radial-gradient"] {
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent) !important;
+}
+
+/* Contact section */
+body.dark-mode #contact p[data-lang="contact-description"] {
+  color: #e0e0e0 !important;
+}
+
+/* Border dividers */
+body.dark-mode .border-bottom {
+  border-color: #444 !important;
 }
 
 /* Text */
@@ -11216,25 +11352,27 @@ body.dark-mode h6 {
 
 /* Form elements */
 body.dark-mode .form-control {
-  background-color: #2c2c2c;
-  color: #e0e0e0;
-  border-color: #444;
+  background-color: #2c2c2c !important;
+  color: #e0e0e0 !important;
+  border-color: #444 !important;
 }
 body.dark-mode .form-control:focus {
-  background-color: #333;
-  color: #e0e0e0;
-  border-color: #fd7e14;
+  background-color: #333 !important;
+  color: #e0e0e0 !important;
+  border-color: #fd7e14 !important;
 }
 body.dark-mode .form-floating > label {
-  color: #aaaaaa;
+  color: #aaaaaa !important;
 }
 body.dark-mode .btn-primary {
-  background-color: #ff6d2e;
-  border-color: #ff6d2e;
-} 
+  background-color: #fd7e14 !important;
+  border-color: #fd7e14 !important;
+  color: #ffffff !important;
+}
 body.dark-mode .btn-primary:hover {
-  background-color: white;
-  border-color: white;
+  background-color: #e06612 !important;
+  border-color: #e06612 !important;
+  color: #ffffff !important;
 }
 
 /* Footer */
@@ -11244,21 +11382,19 @@ body.dark-mode footer.bg-black {
 body.dark-mode .text-white-50 {
   color: #aaaaaa !important;
 }
+body.dark-mode footer a {
+  color: #aaaaaa !important;
+}
+body.dark-mode footer a:hover {
+  color: #fd7e14 !important;
+}
+body.dark-mode footer img {
+  filter: brightness(0.8);
+}
 
 /* Icons */
 body.dark-mode .icon-feature {
   color: #fd7e14 !important;
-}
-
-/* Team section specific */
-body.dark-mode #team {
-  color: #e0e0e0;
-}
-body.dark-mode #team .text-muted {
-  color: #aaaaaa !important;
-}
-body.dark-mode #team img {
-  filter: brightness(0.8); 
 }
 
 

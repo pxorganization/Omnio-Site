@@ -8,36 +8,22 @@ document.addEventListener('DOMContentLoaded', () => {
   function setTheme(mode) {
     if (mode === 'dark') {
       body.classList.add('dark-mode');
-      if (themeIcon) {
-        themeIcon.classList.remove('bi-brightness-high');
-        themeIcon.classList.add('bi-moon-stars');
-      }
-      if (themeToggle) {
-        themeToggle.classList.remove('btn-outline-secondary');
-        themeToggle.classList.add('btn-primary');
-      }
+      themeIcon.classList.remove('bi-brightness-high');
+      themeIcon.classList.add('bi-moon-stars');
     } else {
       body.classList.remove('dark-mode');
-      if (themeIcon) {
-        themeIcon.classList.remove('bi-moon-stars');
-        themeIcon.classList.add('bi-brightness-high');
-      }
-      if (themeToggle) {
-        themeToggle.classList.remove('btn-primary');
-        themeToggle.classList.add('btn-outline-secondary');
-      }
+      themeIcon.classList.remove('bi-moon-stars');
+      themeIcon.classList.add('bi-brightness-high');
     }
     localStorage.setItem('theme', mode);
   }
 
   setTheme(theme);
 
-  if (themeToggle) {
-    themeToggle.addEventListener('click', () => {
-      theme = theme === 'light' ? 'dark' : 'light';
-      setTheme(theme);
-    });
-  }
+  themeToggle.addEventListener('click', () => {
+    theme = theme === 'light' ? 'dark' : 'light';
+    setTheme(theme);
+  });
 
   const mainNav = document.querySelector('#mainNav');
   if (mainNav) {
@@ -56,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
   const form = document.querySelector("form");
   if (form) {
     form.addEventListener("submit", async function (e) {
@@ -68,12 +55,12 @@ document.addEventListener('DOMContentLoaded', () => {
         },
       });
 
-       if (response.ok) {
-      alert("Message sent successfully!");
-      form.reset();
-    } else {
-      alert("Error sending the message.");
-    }
+      if (response.ok) {
+        alert("Message sent successfully!");
+        form.reset();
+      } else {
+        alert("Error sending the message.");
+      }
     });
   }
 });
