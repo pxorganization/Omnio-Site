@@ -6,9 +6,12 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>FAQs - Omnio</title>
+    <meta
+      name="description"
+      content="Omnio helps households and businesses reduce electricity costs by scheduling appliances when energy is cheapest."
+    />
+    <meta name="author" content="Omnio Team" />
+    <title>FAQ - Omnio</title>
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <link
@@ -33,31 +36,45 @@
       rel="stylesheet"
       type="text/css"
     />
+    <!-- Core theme CSS -->
     <link href="css/styles.css" rel="stylesheet" />
     <style>
+      /* Layout */
       body {
-        background-color: #fff;
+        margin: 0;
         display: flex;
         flex-direction: column;
-        min-height: 100vh; /* Ensures the body takes up at least the full viewport height */
+        min-height: 100vh;
+        background-color: #f8f9fa;
+        color: #1f1f1f;
       }
       .navbar {
         padding-top: 1rem;
         padding-bottom: 1rem;
+        background: #ffffff !important;
       }
       .faq-section {
-        padding: 6rem 0 4rem 0; /* Increased top padding to avoid overlap with fixed navbar */
-        flex: 1 0 auto; /* Allows the section to grow and push the footer down */
+        padding: 6rem 0 4rem 0;
+        flex: 1 0 auto;
+        background-color: #f8f9fa;
       }
+      footer {
+        flex-shrink: 0;
+        background-color: #000000;
+      }
+      /* FAQ Section */
       .faq-item {
-        background-color: #fff;
+        background-color: #ffffff;
         border-left: 4px solid #ff6d2e;
         padding: 1.5rem;
         margin-bottom: 1rem;
         border-radius: 8px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease;
-        position: relative;
+      }
+      .faq-item:nth-child(even) {
+        border-left: none;
+        border-right: 4px solid #ff6d2e;
       }
       .faq-item:hover {
         transform: translateY(-5px);
@@ -94,37 +111,116 @@
         line-height: 1.6;
         margin-top: 1rem;
         display: none;
-      }
-      .secret {
-        padding-bottom: 30px;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
       }
       .faq-answer.show {
         display: block;
       }
-      footer {
-        flex-shrink: 0; /* Prevents the footer from shrinking */
-      }
       @media (max-width: 768px) {
+        .faq-section {
+          padding-top: 5rem;
+        }
         .faq-question {
           font-size: 1rem;
         }
         .faq-answer {
           font-size: 0.9rem;
         }
-        .faq-section {
-          padding-top: 5rem; /* Adjusted for smaller screens */
-        }
+      }
+      /* Dark Mode */
+      body.dark-mode {
+        background-color: #121212;
+        color: #e0e0e0;
+      }
+      body.dark-mode .navbar {
+        background-color: #212121 !important;
+      }
+      body.dark-mode .navbar-brand,
+      body.dark-mode .nav-link {
+        color: #e0e0e0 !important;
+      }
+      body.dark-mode .navbar-brand:hover,
+      body.dark-mode .nav-link:hover {
+        color: #fd7e14 !important;
+      }
+      body.dark-mode .navbar-toggler {
+        color: #e0e0e0 !important;
+        border-color: #444 !important;
+      }
+      body.dark-mode .btn-outline-secondary {
+        border-color: #e0e0e0 !important;
+        color: #e0e0e0 !important;
+      }
+      body.dark-mode .btn-outline-secondary:hover {
+        border-color: #fd7e14 !important;
+        color: #fd7e14 !important;
+      }
+      body.dark-mode .faq-section {
+        background-color: #1e1e1e;
+      }
+      body.dark-mode .faq-item {
+        background-color: #2c2c2c !important;
+        border-color: #fd7e14 !important;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) !important;
+      }
+      body.dark-mode .faq-question {
+        color: #ffffff !important;
+      }
+      body.dark-mode .faq-answer {
+        color: #ffffff !important;
+      }
+      body.dark-mode .faq-arrow {
+        border-top-color: #fd7e14 !important;
+      }
+      body.dark-mode footer.bg-black {
+        background-color: #000000 !important;
+      }
+      body.dark-mode .text-white-50 {
+        color: #aaaaaa !important;
+      }
+      body.dark-mode footer img {
+        filter: brightness(0.8);
+      }
+      /* Additional Dark Mode Overrides */
+      body.dark-mode .bg-light,
+      body.dark-mode #team.bg-white {
+        background-color: #1e1e1e !important;
+      }
+      body.dark-mode .text-muted {
+        color: #aaaaaa !important;
+      }
+      body.dark-mode h2 {
+        color: #e0e0e0 !important;
+      }
+      /* Footer */
+      .text-white-50 a {
+        color: rgba(255, 255, 255, 0.5);
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+      .text-white-50 a:hover {
+        color: #ff6d2e;
+      }
+      /* Navbar Links */
+      .nav-link {
+        color: #4a4a4a !important;
+        transition: color 0.3s ease;
+      }
+      .nav-link:hover {
+        color: #ff6d2e !important;
       }
     </style>
   </head>
   <body id="page-top">
-    <!-- Navigation-->
+    <!-- Navigation -->
     <nav
       class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm"
       id="mainNav"
     >
       <div class="container px-5">
-        <a class="navbar-brand fw-bold" href="#page-top">Omnio</a>
+        <a class="navbar-brand fw-bold" href="index.html" style="color: #1f1f1f"
+          >Omnio</a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -135,104 +231,219 @@
           aria-label="Toggle navigation"
         >
           Menu
-          <i class="bi-list"></i>
+          <i class="bi bi-list"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
             <li class="nav-item">
-              <a
-                class="nav-link me-lg-3"
-                href="https://pxorganization.github.io/Omnio-Site/"
+              <a class="nav-link me-lg-3" href="index.html" data-lang="nav-home"
                 >Home</a
               >
             </li>
           </ul>
+          <button
+            id="themeToggle"
+            class="btn btn-outline-secondary ms-2 d-flex align-items-center"
+            type="button"
+            aria-label="Toggle light/dark mode"
+          >
+            <i id="themeIcon" class="bi bi-brightness-high"></i>
+          </button>
+          <button
+            id="languageToggle"
+            class="btn btn-outline-secondary ms-2 d-flex align-items-center"
+            type="button"
+            aria-label="Toggle language"
+          >
+            <i class="bi bi-globe me-1"></i><span id="languageText">EN</span>
+          </button>
         </div>
       </div>
     </nav>
-    <div class="secret"></div>
     <!-- FAQ Section -->
-    <section class="faq-section bg-white">
-      <div class="container px-5">
-        <h2
-          class="display-4 lh-1 mb-5 text-center"
-          style="color: #1f1f1f; font-weight: 700"
-        >
+    <section id="faq" class="faq-section">
+      <div class="container px-4 py-5">
+        <h2 class="display-4 lh-1 mb-4 text-center" data-lang="faq-title">
           FAQ
         </h2>
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFAQ(1)">
-            What is Omnio?
-            <span class="faq-arrow" id="arrow-1"></span>
-          </button>
-          <div class="faq-answer" id="answer-1">
-            <p>
-              Omnio is a platform that helps households and businesses showcase
-              their apps beautifully, optimizing energy consumption with an
-              AI-powered solution.
-            </p>
+        <div class="row g-3">
+          <div class="col-lg-6">
+            <div class="faq-item">
+              <button class="faq-question" data-faq-id="1">
+                <span data-lang="faq-question-1">What is Omnio?</span>
+                <span class="faq-arrow" id="arrow-1"></span>
+              </button>
+              <div class="faq-answer" id="answer-1">
+                <p data-lang="faq-answer-1">
+                  Omnio is an AI-powered platform that optimizes energy
+                  consumption by scheduling appliances to run when electricity
+                  prices are lowest.
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFAQ(2)">
-            How does it work?
-            <span class="faq-arrow" id="arrow-2"></span>
-          </button>
-          <div class="faq-answer" id="answer-2">
-            <p>
-              Omnio provides a simple interface to manage and optimize app
-              usage, with features like device mockups and flexible use options.
-            </p>
+          <div class="col-lg-6">
+            <div class="faq-item">
+              <button class="faq-question" data-faq-id="2">
+                <span data-lang="faq-question-2"
+                  >How does Omnio save money?</span
+                >
+                <span class="faq-arrow" id="arrow-2"></span>
+              </button>
+              <div class="faq-answer" id="answer-2">
+                <p data-lang="faq-answer-2">
+                  Omnio monitors electricity prices and schedules your
+                  appliances to operate during low-cost periods, reducing your
+                  energy bills.
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFAQ(3)">
-            Is it free to use?
-            <span class="faq-arrow" id="arrow-3"></span>
-          </button>
-          <div class="faq-answer" id="answer-3">
-            <p>
-              Yes, Omnio offers a free tier with basic features, and premium
-              options are available for advanced usage.
-            </p>
+          <div class="col-lg-6">
+            <div class="faq-item">
+              <button class="faq-question" data-faq-id="3">
+                <span data-lang="faq-question-3">Is Omnio easy to use?</span>
+                <span class="faq-arrow" id="arrow-3"></span>
+              </button>
+              <div class="faq-answer" id="answer-3">
+                <p data-lang="faq-answer-3">
+                  Yes, Omnio is user-friendly. Simply input your device
+                  preferences, and it handles the rest with an intuitive
+                  interface.
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFAQ(4)">
-            What support is available?
-            <span class="faq-arrow" id="arrow-4"></span>
-          </button>
-          <div class="faq-answer" id="answer-4">
-            <p>
-              We offer 24/7 customer support via email and live chat to assist
-              with any questions or issues.
-            </p>
+          <div class="col-lg-6">
+            <div class="faq-item">
+              <button class="faq-question" data-faq-id="4">
+                <span data-lang="faq-question-4"
+                  >What support does Omnio offer?</span
+                >
+                <span class="faq-arrow" id="arrow-4"></span>
+              </button>
+              <div class="faq-answer" id="answer-4">
+                <p data-lang="faq-answer-4">
+                  Omnio provides 24/7 support via email and live chat to help
+                  with setup, usage, or any issues.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- Footer-->
+    <!-- Footer -->
     <footer class="bg-black text-center py-5">
       <div class="container px-5">
         <div class="text-white-50 small">
-          <div class="mb-2">© Omnio Website 2025. All Rights Reserved.</div>
-          <span class="mx-1">·</span>
+          <div class="mb-2" data-lang="footer-copyright">
+            © Omnio Website 2025. All Rights Reserved.
+          </div>
         </div>
+        <img
+          src="assets/img/Omio logo.png"
+          alt="Omnio logo"
+          style="max-width: 100px; transition: transform 0.3s ease"
+          onmouseover="this.style.transform='scale(1.1)';"
+          onmouseout="this.style.transform='scale(1)';"
+        />
       </div>
     </footer>
-
-    <!-- Bootstrap core JS-->
-    <script src="js/scripts.js"></script>
-    <!-- SB Forms JS-->
+    <!-- SB Forms JS -->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     <script>
-      function toggleFAQ(id) {
-        const answer = document.getElementById(`answer-${id}`);
-        const arrow = document.getElementById(`arrow-${id}`);
-        answer.classList.toggle("show");
-        arrow.classList.toggle("rotated");
-      }
+      document.addEventListener("DOMContentLoaded", () => {
+        const themeToggle = document.getElementById("themeToggle");
+        const languageToggle = document.getElementById("languageToggle");
+        const themeIcon = document.getElementById("themeIcon");
+        const languageText = document.getElementById("languageText");
+        const body = document.body;
+
+        // Dark mode functionality
+        const savedTheme = localStorage.getItem("theme") || "light";
+        if (savedTheme === "dark") {
+          body.classList.add("dark-mode");
+          themeIcon.className = "bi bi-moon-stars-fill";
+        }
+        themeToggle.addEventListener("click", () => {
+          body.classList.toggle("dark-mode");
+          const isDarkMode = body.classList.contains("dark-mode");
+          localStorage.setItem("theme", isDarkMode ? "dark" : "light");
+          themeIcon.className = isDarkMode
+            ? "bi bi-moon-stars-fill"
+            : "bi bi-brightness-high";
+        });
+
+        // Language translations
+        const translations = {
+          en: {
+            "nav-home": "Home",
+            "footer-copyright": "© Omnio Website 2025. All Rights Reserved",
+            "faq-title": "FAQ",
+            "faq-question-1": "What is Omnio?",
+            "faq-answer-1":
+              "Omnio is an AI-powered platform that optimizes energy consumption by scheduling appliances to run when electricity prices are lowest.",
+            "faq-question-2": "How does Omnio save money?",
+            "faq-answer-2":
+              "Omnio monitors electricity prices and schedules your appliances to operate during low-cost periods, reducing your energy bills.",
+            "faq-question-3": "Is Omnio easy to use?",
+            "faq-answer-3":
+              "Yes, Omnio is user-friendly. Simply input your device preferences, and it handles the rest with an intuitive interface.",
+            "faq-question-4": "What support does Omnio offer?",
+            "faq-answer-4":
+              "Omnio provides 24/7 support via email and live chat to help with setup, usage, or any issues.",
+          },
+          el: {
+            "nav-home": "Αρχική",
+            "footer-copyright": "© Omnio Website 2025. All Rights Reserved",
+            "faq-title": "Συχνές Ερωτήσεις",
+            "faq-question-1": "Τι είναι το Omnio;",
+            "faq-answer-1":
+              "Το Omnio είναι μια πλατφόρμα με τεχνητή νοημοσύνη που βελτιστοποιεί την κατανάλωση ενέργειας προγραμματίζοντας τις συσκευές να λειτουργούν όταν οι τιμές ηλεκτρικής ενέργειας είναι χαμηλότερες.",
+            "faq-question-2": "Πώς εξοικονομεί χρήματα το Omnio;",
+            "faq-answer-2":
+              "Το Omnio παρακολουθεί τις τιμές ηλεκτρικής ενέργειας και προγραμματίζει τις συσκευές σου να λειτουργούν κατά τις περιόδους χαμηλού κόστους, μειώνοντας τους λογαριασμούς ενέργειας.",
+            "faq-question-3": "Είναι εύχρηστο το Omnio;",
+            "faq-answer-3":
+              "Ναι, το Omnio είναι φιλικό προς τον χρήστη. Απλά εισάγε τις προτιμήσεις των συσκευών σου και αυτό αναλαμβάνει τα υπόλοιπα με μια διαισθητική διεπαφή.",
+            "faq-question-4": "Τι υποστήριξη προσφέρει το Omnio;",
+            "faq-answer-4":
+              "Το Omnio παρέχει υποστήριξη 24/7 μέσω email και ζωντανής συνομιλίας για να βοηθήσει με τη ρύθμιση, τη χρήση ή οποιαδήποτε προβλήματα.",
+          },
+        };
+
+        // Language toggle functionality
+        const savedLang = localStorage.getItem("language") || "en";
+        languageText.textContent = savedLang === "el" ? "EL" : "EN";
+        updateLanguage(savedLang);
+        languageToggle.addEventListener("click", () => {
+          const newLang = languageText.textContent === "EN" ? "el" : "en";
+          languageText.textContent = newLang === "el" ? "EL" : "EN";
+          localStorage.setItem("language", newLang);
+          updateLanguage(newLang);
+        });
+        function updateLanguage(lang) {
+          document.querySelectorAll("[data-lang]").forEach((elem) => {
+            const key = elem.getAttribute("data-lang");
+            if (translations[lang] && translations[lang][key]) {
+              elem.innerHTML = translations[lang][key];
+            }
+          });
+          document.documentElement.lang = lang;
+        }
+
+        // FAQ Toggle functionality
+        document.querySelectorAll(".faq-question").forEach((button) => {
+          button.addEventListener("click", () => {
+            const id = button.getAttribute("data-faq-id");
+            const answer = document.getElementById(`answer-${id}`);
+            const arrow = document.getElementById(`arrow-${id}`);
+            answer.classList.toggle("show");
+            arrow.classList.toggle("rotated");
+          });
+        });
+      });
     </script>
   </body>
 </html>
