@@ -1,186 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-  <title>FAQs - Omnio</title>
-  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css' />
-  <link href="css/styles.css" rel="stylesheet" />
-  <style>
-    body {
-      background-color: #fff;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh; /* Ensures the body takes up at least the full viewport height */
-    }
-    .navbar {
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-    }
-    .faq-section {
-      padding: 6rem 0 4rem 0; /* Increased top padding to avoid overlap with fixed navbar */
-      flex: 1 0 auto; /* Allows the section to grow and push the footer down */
-    }
-    .faq-item {
-      background-color: #fff;
-      border-left: 4px solid #ff6d2e;
-      padding: 1.5rem;
-      margin-bottom: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-      position: relative;
-    }
-    .faq-item:hover {
-      transform: translateY(-5px);
-    }
-    .faq-question {
-      font-size: 1.2rem;
-      font-weight: 600;
-      color: #1f1f1f;
-      cursor: pointer;
-      width: 100%;
-      text-align: left;
-      background: none;
-      border: none;
-      padding: 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .faq-arrow {
-      width: 0;
-      height: 0;
-      border-left: 5px solid transparent;
-      border-right: 5px solid transparent;
-      border-top: 5px solid #ff6d2e;
-      transition: transform 0.3s ease;
-      margin-left: 1rem;
-    }
-    .faq-arrow.rotated {
-      transform: rotate(180deg);
-    }
-    .faq-answer {
-      font-size: 1rem;
-      color: #4a4a4a;
-      line-height: 1.6;
-      margin-top: 1rem;
-      display: none;
-    }
-    .secret{
-        padding-bottom: 30px;
-    }
-    .faq-answer.show {
-      display: block;
-    }
-    footer {
-      flex-shrink: 0; /* Prevents the footer from shrinking */
-    }
-    @media (max-width: 768px) {
-      .faq-question {
-        font-size: 1rem;
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>FAQs - Omnio</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+      body {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; /* Ensures the body takes up at least the full viewport height */
       }
-      .faq-answer {
-        font-size: 0.9rem;
+      .navbar {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
       }
       .faq-section {
-        padding-top: 5rem; /* Adjusted for smaller screens */
+        padding: 6rem 0 4rem 0; /* Increased top padding to avoid overlap with fixed navbar */
+        flex: 1 0 auto; /* Allows the section to grow and push the footer down */
       }
-    }
-  </style>
-</head>
-<body id="page-top">
-  <!-- Navigation-->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
-    <div class="container px-5">
-      <a class="navbar-brand fw-bold" href="#page-top">Omnio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="bi-list"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-          <li class="nav-item">
-            <a class="nav-link me-lg-3" href="https://pxorganization.github.io/Omnio-Site/">Home</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div class="secret"></div>
-  <!-- FAQ Section -->
-  <section class="faq-section bg-white">
-    <div class="container px-5">
-      <h2 class="display-4 lh-1 mb-5 text-center" style="color: #1f1f1f; font-weight: 700;">FAQ</h2>
-      <div class="faq-item">
-        <button class="faq-question" onclick="toggleFAQ(1)">
-          What is Omnio?
-          <span class="faq-arrow" id="arrow-1"></span>
+      .faq-item {
+        background-color: #fff;
+        border-left: 4px solid #ff6d2e;
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        position: relative;
+      }
+      .faq-item:hover {
+        transform: translateY(-5px);
+      }
+      .faq-question {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #1f1f1f;
+        cursor: pointer;
+        width: 100%;
+        text-align: left;
+        background: none;
+        border: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .faq-arrow {
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #ff6d2e;
+        transition: transform 0.3s ease;
+        margin-left: 1rem;
+      }
+      .faq-arrow.rotated {
+        transform: rotate(180deg);
+      }
+      .faq-answer {
+        font-size: 1rem;
+        color: #4a4a4a;
+        line-height: 1.6;
+        margin-top: 1rem;
+        display: none;
+      }
+      .secret {
+        padding-bottom: 30px;
+      }
+      .faq-answer.show {
+        display: block;
+      }
+      footer {
+        flex-shrink: 0; /* Prevents the footer from shrinking */
+      }
+      @media (max-width: 768px) {
+        .faq-question {
+          font-size: 1rem;
+        }
+        .faq-answer {
+          font-size: 0.9rem;
+        }
+        .faq-section {
+          padding-top: 5rem; /* Adjusted for smaller screens */
+        }
+      }
+    </style>
+  </head>
+  <body id="page-top">
+    <!-- Navigation-->
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm"
+      id="mainNav"
+    >
+      <div class="container px-5">
+        <a class="navbar-brand fw-bold" href="#page-top">Omnio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="bi-list"></i>
         </button>
-        <div class="faq-answer" id="answer-1">
-          <p>Omnio is a platform that helps households and businesses showcase their apps beautifully, optimizing energy consumption with an AI-powered solution.</p>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link me-lg-3"
+                href="https://pxorganization.github.io/Omnio-Site/"
+                >Home</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="faq-item">
-        <button class="faq-question" onclick="toggleFAQ(2)">
-          How does it work?
-          <span class="faq-arrow" id="arrow-2"></span>
-        </button>
-        <div class="faq-answer" id="answer-2">
-          <p>Omnio provides a simple interface to manage and optimize app usage, with features like device mockups and flexible use options.</p>
+    </nav>
+    <div class="secret"></div>
+    <!-- FAQ Section -->
+    <section class="faq-section bg-white">
+      <div class="container px-5">
+        <h2
+          class="display-4 lh-1 mb-5 text-center"
+          style="color: #1f1f1f; font-weight: 700"
+        >
+          FAQ
+        </h2>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFAQ(1)">
+            What is Omnio?
+            <span class="faq-arrow" id="arrow-1"></span>
+          </button>
+          <div class="faq-answer" id="answer-1">
+            <p>
+              Omnio is a platform that helps households and businesses showcase
+              their apps beautifully, optimizing energy consumption with an
+              AI-powered solution.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFAQ(2)">
+            How does it work?
+            <span class="faq-arrow" id="arrow-2"></span>
+          </button>
+          <div class="faq-answer" id="answer-2">
+            <p>
+              Omnio provides a simple interface to manage and optimize app
+              usage, with features like device mockups and flexible use options.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFAQ(3)">
+            Is it free to use?
+            <span class="faq-arrow" id="arrow-3"></span>
+          </button>
+          <div class="faq-answer" id="answer-3">
+            <p>
+              Yes, Omnio offers a free tier with basic features, and premium
+              options are available for advanced usage.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFAQ(4)">
+            What support is available?
+            <span class="faq-arrow" id="arrow-4"></span>
+          </button>
+          <div class="faq-answer" id="answer-4">
+            <p>
+              We offer 24/7 customer support via email and live chat to assist
+              with any questions or issues.
+            </p>
+          </div>
         </div>
       </div>
-      <div class="faq-item">
-        <button class="faq-question" onclick="toggleFAQ(3)">
-          Is it free to use?
-          <span class="faq-arrow" id="arrow-3"></span>
-        </button>
-        <div class="faq-answer" id="answer-3">
-          <p>Yes, Omnio offers a free tier with basic features, and premium options are available for advanced usage.</p>
-        </div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question" onclick="toggleFAQ(4)">
-          What support is available?
-          <span class="faq-arrow" id="arrow-4"></span>
-        </button>
-        <div class="faq-answer" id="answer-4">
-          <p>We offer 24/7 customer support via email and live chat to assist with any questions or issues.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer-->
-  <footer class="bg-black text-center py-5">
-    <div class="container px-5">
-      <div class="text-white-50 small">
-        <div class="mb-2">© Omnio Website 2025. All Rights Reserved.</div>
-        <span class="mx-1">·</span>
-      </div>    
-    </div>
-  </footer>
+    <!-- Footer-->
+    <footer class="bg-black text-center py-5">
+      <div class="container px-5">
+        <div class="text-white-50 small">
+          <div class="mb-2">© Omnio Website 2025. All Rights Reserved.</div>
+          <span class="mx-1">·</span>
+        </div>
+      </div>
+    </footer>
 
-  <!-- Bootstrap core JS-->
-  <script src="js/scripts.js"></script>
-  <!-- SB Forms JS-->
-  <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-  <script>
-    function toggleFAQ(id) {
-      const answer = document.getElementById(`answer-${id}`);
-      const arrow = document.getElementById(`arrow-${id}`);
-      answer.classList.toggle('show');
-      arrow.classList.toggle('rotated');
-    }
-  </script>
-</body>
+    <!-- Bootstrap core JS-->
+    <script src="js/scripts.js"></script>
+    <!-- SB Forms JS-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <script>
+      function toggleFAQ(id) {
+        const answer = document.getElementById(`answer-${id}`);
+        const arrow = document.getElementById(`arrow-${id}`);
+        answer.classList.toggle("show");
+        arrow.classList.toggle("rotated");
+      }
+    </script>
+  </body>
 </html>
