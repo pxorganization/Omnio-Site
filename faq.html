@@ -502,25 +502,25 @@
           },
         };
 
-        // Language toggle functionality
-        const savedLang = localStorage.getItem("language") || "en";
-        languageText.textContent = savedLang === "el" ? "EL" : "EN";
-        updateLanguage(savedLang);
-        languageToggle.addEventListener("click", () => {
-          const newLang = languageText.textContent === "EN" ? "el" : "en";
-          languageText.textContent = newLang === "el" ? "EL" : "EN";
-          localStorage.setItem("language", newLang);
-          updateLanguage(newLang);
-        });
-        function updateLanguage(lang) {
-          document.querySelectorAll("[data-lang]").forEach((elem) => {
-            const key = elem.getAttribute("data-lang");
-            if (translations[lang] && translations[lang][key]) {
-              elem.innerHTML = translations[lang][key];
-            }
-          });
-          document.documentElement.lang = lang;
-        }
+        // // Language toggle functionality
+        // const savedLang = localStorage.getItem("language") || "en";
+        // languageText.textContent = savedLang === "el" ? "EL" : "EN";
+        // updateLanguage(savedLang);
+        // languageToggle.addEventListener("click", () => {
+        //   const newLang = languageText.textContent === "EN" ? "el" : "en";
+        //   languageText.textContent = newLang === "el" ? "EL" : "EN";
+        //   localStorage.setItem("language", newLang);
+        //   updateLanguage(newLang);
+        // });
+        // function updateLanguage(lang) {
+        //   document.querySelectorAll("[data-lang]").forEach((elem) => {
+        //     const key = elem.getAttribute("data-lang");
+        //     if (translations[lang] && translations[lang][key]) {
+        //       elem.innerHTML = translations[lang][key];
+        //     }
+        //   });
+        //   document.documentElement.lang = lang;
+        // }
 
         // FAQ Toggle functionality
         document.querySelectorAll(".faq-question").forEach((button) => {
