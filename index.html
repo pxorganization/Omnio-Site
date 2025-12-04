@@ -1,1170 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta
-      name="description"
-      content="Omnio helps businesses reduce electricity costs by scheduling appliances when energy is cheapest."
-    />
-    <meta name="author" content="Omnio Team" />
-    <title>Omnio</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Bootstrap icons -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <!-- Core theme CSS -->
-    <link href="css/styles.css" rel="stylesheet" />
-  </head>
-  <body id="page-top">
-    <!-- Navigation -->
-    <nav
-      class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm"
-      id="mainNav"
-      style="background: #ffffff"
-    >
-      <div class="container px-5">
-        <a class="navbar-brand fw-bold" href="#page-top" style="color: #1f1f1f"
-          >Omnio</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          Menu
-          <i class="bi bi-list"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-            <li class="nav-item">
-              <a
-                class="nav-link me-lg-3"
-                href="#page-top"
-                style="color: #4a4a4a; transition: color 0.3s ease"
-                onmouseover="this.style.color='#ff6d2e';"
-                onmouseout="this.style.color='#4a4a4a';"
-                data-lang="nav-home"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link me-lg-3"
-                href="#how-it-works"
-                style="color: #4a4a4a; transition: color 0.3s ease"
-                onmouseover="this.style.color='#ff6d2e';"
-                onmouseout="this.style.color='#4a4a4a';"
-                data-lang="nav-how-it-works"
-                >How It Works</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link me-lg-3"
-                href="#why-it-matters"
-                style="color: #4a4a4a; transition: color 0.3s ease"
-                onmouseover="this.style.color='#ff6d2e';"
-                onmouseout="this.style.color='#4a4a4a';"
-                data-lang="nav-why-it-matters"
-                >Why It Matters</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link me-lg-3"
-                href="#team"
-                style="color: #4a4a4a; transition: color 0.3s ease"
-                onmouseover="this.style.color='#ff6d2e';"
-                onmouseout="this.style.color='#4a4a4a';"
-                data-lang="nav-team"
-                >Our Team</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link me-lg-3"
-                href="faq.html"
-                style="color: #4a4a4a; transition: color 0.3s ease"
-                onmouseover="this.style.color='#ff6d2e';"
-                onmouseout="this.style.color='#4a4a4a';"
-                data-lang="nav-contact"
-                >FAQ</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link me-lg-3"
-                href="#contact"
-                style="color: #4a4a4a; transition: color 0.3s ease"
-                onmouseover="this.style.color='#ff6d2e';"
-                onmouseout="this.style.color='#4a4a4a';"
-                data-lang="nav-contact"
-                >Let’s Talk</a
-              >
-            </li>
-          </ul>
-          <button
-            id="themeToggle"
-            class="btn btn-outline-secondary ms-2 d-flex align-items-center"
-            type="button"
-            aria-label="Toggle light/dark mode"
-            style="
-              border-color: #4a4a4a;
-              color: #4a4a4a;
-              transition: all 0.3s ease;
-            "
-            onmouseover="this.style.borderColor='#ff6d2e'; this.style.color='#ff6d2e';"
-            onmouseout="this.style.borderColor='#4a4a4a'; this.style.color='#4a4a4a';"
-          >
-            <i id="themeIcon" class="bi bi-brightness-high"></i>
-          </button>
-          <!-- <button
-            id="languageToggle"
-            class="btn btn-outline-secondary ms-2 d-flex align-items-center"
-            type="button"
-            aria-label="Toggle language"
-            style="
-              border-color: #4a4a4a;
-              color: #4a4a4a;
-              transition: all 0.3s ease;
-            "
-            onmouseover="this.style.borderColor='#ff6d2e'; this.style.color='#ff6d2e';"
-            onmouseout="this.style.borderColor='#4a4a4a'; this.style.color='#4a4a4a';"
-          >
-            <i class="bi bi-globe me-1"></i><span id="languageText">EN</span>
-          </button> -->
-        </div>
-      </div>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Omnio • Coming Soon</title>
+  <meta name="description" content="Omnio – Something big is coming."/>
 
-    <!-- Masthead header -->
-    <header class="masthead" style="background: #f8f9fa">
-      <div class="container px-5">
-        <div class="row gx-5 align-items-center">
-          <div class="col-lg-6">
-            <div class="mb-5 mb-lg-0 text-center text-lg-start">
-              <h1 class="display-1 lh-1 mb-3" style="color: #1f1f1f">Omnio</h1>
-              <p
-                class="lead fw-normal mb-3"
-                style="color: #000000; font-size: larger"
-                data-lang="masthead-slogan"
-              >
-                <b>Make energy usage</b>
-                <span style="color: #ff6d2e">Smart</span> |
-                <span style="color: #ff6d2e">Cost-efficient</span> |
-                <span style="color: #ff6d2e">User-friendly</span>
-              </p>
-              <p
-                class="lead fw-normal mb-5"
-                style="color: #4a4a4a"
-                data-lang="masthead-description"
-              >
-                Omnio helps businesses cut electricity costs, balance
-                consumption, and meet sustainability goals. By automated,
-                real-time appliance scheduling based on dynamic pricing
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div
-              class="laptop-mockup-wrapper"
-              style="position: relative; max-width: 600px; margin: auto"
-            >
-              <img
-                src="assets/img/laptop_remove.png"
-                alt="Laptop mockup"
-                style="
-                  width: 100%;
-                  display: block;
-                  transition: transform 0.3s ease;
-                "
-              />
-              <div
-                class="video-overlay"
-                style="
-                  position: absolute;
-                  top: 17%;
-                  left: 11%;
-                  width: 78%;
-                  height: 54.5%;
-                  overflow: hidden;
-                  border-radius: 8px;
-                  border: 2px solid #4a4a4a;
-                "
-              >
-                <img
-                  src="assets/img/updated-dashboard.png"
-                  alt="Demo screen"
-                  style="width: 100%; height: 100%"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&display=swap');
 
-    <div class="border-bottom" style="border-color: #4a4a4a"></div>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      height: 100vh;
+      overflow: hidden;
+      background: #1f1f1f;
+      color: #efeeec;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-    <!-- Quote/testimonial aside -->
-    <aside
-      style="
-        text-align: center;
-        background: linear-gradient(45deg, #4a4a4a, #1f1f1f);
-        padding: 60px 0;
-        position: relative;
-        overflow: hidden;
-      "
-    >
-      <div
-        style="
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: radial-gradient(
-            circle at top left,
-            rgba(0, 0, 0, 0.3),
-            transparent 50%
-          );
-          z-index: 1;
-        "
-      ></div>
-      <div class="container px-5" style="position: relative; z-index: 2">
-        <div class="row gx-5 justify-content-center">
-          <div class="col-xl-8 col-lg-10">
-            <div
-              style="
-                font-size: 2rem;
-                line-height: 1.3;
-                color: #ffffff;
-                font-weight: 700;
-                margin-bottom: 20px;
-                text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-                transition: transform 0.3s ease;
-              "
-              onmouseover="this.style.transform='scale(1.02)';"
-              onmouseout="this.style.transform='scale(1)';"
-              data-lang="quote-text"
-            >
-              <span style="color: #ff6d2e">"</span>Energy prices are
-              <span style="color: #ff6d2e">unpredictable</span>, Business costs
-              <span style="color: #ff6d2e">shouldn’t</span> be<span
-                style="color: #ff6d2e"
-                >"</span
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </aside>
+    .scene {
+      text-align: center;
+      width: 100%;
+      position: relative;
+      z-index: 2;
+    }
 
-    <div class="border-bottom" style="border-color: #4a4a4a"></div>
+    .logo {
+      font-size: 10vw;
+      font-weight: 900;
+      letter-spacing: -0.06em;
+      background: linear-gradient(90deg, #ff6d2e, #ff8c5a, #ffa270);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1.5rem;
+      animation: logoGlow 5s ease-in-out infinite alternate;
+    }
 
-    <!-- App features section -->
-    <section id="how-it-works" class="bg-light">
-      <div class="container px-4 py-5">
-        <h2
-          class="display-4 lh-1 mb-4 text-center"
-          style="color: #1f1f1f"
-          data-lang="how-it-works-title"
-        >
-          How It Works
-        </h2>
-        <div class="row g-3">
-          <div class="col-lg-7">
-            <div
-              class="card"
-              style="
-                background: #ffffff;
-                border-left: 4px solid #ff6d2e;
-                padding: 20px 25px;
-                border-radius: 8px;
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-                transition: transform 0.3s ease;
-              "
-              onmouseover="this.style.transform='translateY(-5px)';"
-              onmouseout="this.style.transform='translateY(0)';"
-            >
-              <h3
-                class="font-alt mb-2"
-                style="font-size: 1.5rem; color: #1f1f1f"
-                data-lang="how-it-works-optimize-title"
-              >
-                Automate Scheduling
-              </h3>
-              <p
-                style="font-size: 1rem; line-height: 1.5; color: #4a4a4a"
-                data-lang="how-it-works-optimize-text"
-              >
-                Omnio creates a cost-efficient weekly schedule tailored to your
-                business-specific preferences and availability, maximizing
-                savings by using electricity when prices are lowest
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-5">
-            <div
-              class="card"
-              style="
-                background: #ffffff;
-                border-right: 4px solid #ff6d2e;
-                padding: 20px 25px;
-                border-radius: 8px;
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-                margin-top: 20px;
-                transition: transform 0.3s ease;
-              "
-              onmouseover="this.style.transform='translateY(-5px)';"
-              onmouseout="this.style.transform='translateY(0)';"
-            >
-              <h3
-                class="font-alt mb-2"
-                style="font-size: 1.5rem; color: #1f1f1f"
-                data-lang="how-it-works-adapt-title"
-              >
-                Adapt in Real Time
-              </h3>
-              <p
-                style="font-size: 1rem; line-height: 1.5; color: #4a4a4a"
-                data-lang="how-it-works-adapt-text"
-              >
-                Omnio dynamically adjusts your schedule as energy prices and
-                conditions change, ensuring continuous savings and optimal load
-                distribution
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div
-              class="card"
-              style="
-                background: #ffffff;
-                border-left: 4px solid #ff6d2e;
-                padding: 20px 25px;
-                border-radius: 8px;
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-                margin-top: 20px;
-                transition: transform 0.3s ease;
-              "
-              onmouseover="this.style.transform='translateY(-5px)';"
-              onmouseout="this.style.transform='translateY(0)';"
-            >
-              <h3
-                class="font-alt mb-2"
-                style="font-size: 1.5rem; color: #1f1f1f"
-                data-lang="how-it-works-simple-title"
-              >
-                Deploy Effortlessly
-              </h3>
-              <p
-                style="font-size: 1rem; line-height: 1.5; color: #4a4a4a"
-                data-lang="how-it-works-simple-text"
-              >
-                No technical skills needed—simply define device rules, and Omnio
-                manages everything, making energy optimization effortless
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div
-              class="card"
-              style="
-                background: #ffffff;
-                border-right: 4px solid #ff6d2e;
-                padding: 20px 25px;
-                border-radius: 8px;
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-                margin-top: 20px;
-                transition: transform 0.3s ease;
-              "
-              onmouseover="this.style.transform='translateY(-5px)';"
-              onmouseout="this.style.transform='translateY(0)';"
-            >
-              <h3
-                class="font-alt mb-2"
-                style="font-size: 1.5rem; color: #1f1f1f"
-                data-lang="how-it-works-report-title"
-              >
-                Get Actionable Insights
-              </h3>
-              <p
-                style="font-size: 1rem; line-height: 1.5; color: #4a4a4a"
-                data-lang="how-it-works-report-text"
-              >
-                View detailed insights on energy consumption, cost avoidance,
-                and sustainability impact, empowering smarter business decisions
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="border-bottom" style="border-color: #4a4a4a"></div>
-    <!-- Why It Matters section -->
-    <section id="why-it-matters" class="bg-light py-5">
-      <div class="container px-5">
-        <h2
-          class="display-4 lh-1 mb-5 text-center"
-          style="color: #1f1f1f"
-          data-lang="why-it-matters-title"
-        >
-          Why It Matters
-        </h2>
-        <div class="row g-4 text-center">
-          <div class="col-md-4">
-            <div
-              class="card"
-              style="
-                background: #ffffff;
-                border-radius: 12px;
-                padding: 25px 20px;
-                transition: transform 0.3s ease, box-shadow 0.3s ease,
-                  background 0.3s ease;
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-              "
-            >
-              <div
-                style="
-                  width: 70px;
-                  height: 70px;
-                  background: #ff6d2e;
-                  border-radius: 50%;
-                  margin: 0 auto 15px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  transition: background 0.3s ease;
-                "
-                onmouseover="this.style.background='#ff6d2e';"
-                onmouseout="this.style.background='#ff6d2e';"
-              >
-                <img
-                  src="assets/img/lowprice.png"
-                  alt="Save Money"
-                  style="width: 40px; height: 40px; object-fit: contain"
-                />
-              </div>
-              <h4
-                class="font-alt mb-2"
-                style="color: #1f1f1f; font-size: 1.3rem"
-                data-lang="why-it-matters-save-title"
-              >
-                Cut Energy Costs
-              </h4>
-              <p
-                style="
-                  color: #4a4a4a;
-                  font-size: 0.95rem;
-                  line-height: 1.6;
-                  margin: 0;
-                "
-                data-lang="why-it-matters-save-text"
-              >
-                Electricity prices fluctuate. We schedule appliances to run when
-                costs are lowest, saving you money effortlessly
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div
-              class="card"
-              style="
-                background: #ffffff;
-                border-radius: 12px;
-                padding: 25px 20px;
-                transition: transform 0.3s ease, box-shadow 0.3s ease,
-                  background 0.3s ease;
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-              "
-            >
-              <div
-                style="
-                  width: 70px;
-                  height: 70px;
-                  background: #ff6d2e;
-                  border-radius: 50%;
-                  margin: 0 auto 15px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  transition: background 0.3s ease;
-                "
-                onmouseover="this.style.background='#ff6d2e';"
-                onmouseout="this.style.background='#ff6d2e';"
-              >
-                <img
-                  src="assets/img/controller.png"
-                  alt="Stay in Control"
-                  style="width: 40px; height: 40px; object-fit: contain"
-                />
-              </div>
-              <h4
-                class="font-alt mb-2"
-                style="color: #1f1f1f; font-size: 1.3rem"
-                data-lang="why-it-matters-control-title"
-              >
-                Stay in Control
-              </h4>
-              <p
-                style="
-                  color: #4a4a4a;
-                  font-size: 0.95rem;
-                  line-height: 1.6;
-                  margin: 0;
-                "
-                data-lang="why-it-matters-control-text"
-              >
-                Monitor everything with real-time dashboards that keep you
-                informed and in charge
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div
-              class="card"
-              style="
-                background: #ffffff;
-                border-radius: 12px;
-                padding: 25px 20px;
-                transition: transform 0.3s ease, box-shadow 0.3s ease,
-                  background 0.3s ease;
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-              "
-            >
-              <div
-                style="
-                  width: 70px;
-                  height: 70px;
-                  background: #ff6d2e;
-                  border-radius: 50%;
-                  margin: 0 auto 15px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  transition: background 0.3s ease;
-                "
-                onmouseover="this.style.background='#ff6d2e';"
-                onmouseout="this.style.background='#ff6d2e';"
-              >
-                <img
-                  src="assets/img/bill.png"
-                  alt="View Your Costs"
-                  style="width: 40px; height: 40px; object-fit: contain"
-                />
-              </div>
-              <h4
-                class="font-alt mb-2"
-                style="color: #1f1f1f; font-size: 1.3rem"
-                data-lang="why-it-matters-costs-title"
-              >
-                Track Savings
-              </h4>
-              <p
-                style="
-                  color: #4a4a4a;
-                  font-size: 0.95rem;
-                  line-height: 1.6;
-                  margin: 0;
-                "
-                data-lang="why-it-matters-costs-text"
-              >
-                Track energy usage and savings with hourly, euro-level
-                transparency for complete clarity
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    @media (max-width: 768px) {
+      .logo { font-size: 15vw; }
+    }
 
-    <div class="border-bottom" style="border-color: #4a4a4a"></div>
-    <!-- Timeline -->
-    <h2
-      class="display-4 lh-1 mb-4 text-center"
-      style="color: #1f1f1f; margin-top: 60px"
-      data-lang="timeline-title"
-    >
-      Our Journey
-    </h2>
-    <ul class="timeline">
-      <li>
-        <div class="direction-r">
-          <div class="flag-wrapper">
-            <span
-              class="flag"
-              style="background: #ffffff; color: #1f1f1f"
-              data-lang="timeline-founded-title"
-              >Initialize MVP</span
-            >
-            <span class="time-wrapper"
-              ><span
-                class="time"
-                style="background: #ffffff; color: #ff6d2e"
-                data-lang="timeline-founded-time"
-                >May 2025</span
-              ></span
-            >
-          </div>
-          <div
-            class="desc"
-            style="color: #4a4a4a"
-            data-lang="timeline-founded-text"
-          >
-            Built our first prototype to showcase dynamic scheduling based on
-            real-time electricity prices
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="direction-l">
-          <div class="flag-wrapper">
-            <span
-              class="flag"
-              style="background: #ffffff; color: #1f1f1f"
-              data-lang="timeline-milestone-title"
-              >First Milestone</span
-            >
-            <span class="time-wrapper"
-              ><span
-                class="time"
-                style="background: #ffffff; color: #ff6d2e"
-                data-lang="timeline-milestone-time"
-                >Jun 2025</span
-              ></span
-            >
-          </div>
-          <div
-            class="desc"
-            style="color: #4a4a4a"
-            data-lang="timeline-milestone-text"
-          >
-            Target more types of Businesses - MVP improved based on needs - Talk
-            to potential Clients for feedback
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="direction-r">
-          <div class="flag-wrapper">
-            <span
-              class="flag"
-              style="background: #ffffff; color: #1f1f1f"
-              data-lang="timeline-evolution-title"
-              >Identity Evolution</span
-            >
-            <span class="time-wrapper"
-              ><span
-                class="time"
-                style="background: #ffffff; color: #ff6d2e"
-                data-lang="timeline-evolution-time"
-                >Summer 2025</span
-              ></span
-            >
-          </div>
-          <div
-            class="desc"
-            style="color: #4a4a4a"
-            data-lang="timeline-evolution-text"
-          >
-            We aim beyond the initial MVP - Enhance our Corporate Identity - Run
-            Pilot Program with a client
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="direction-l">
-          <div class="flag-wrapper">
-            <span
-              class="flag"
-              style="background: #ffffff; color: #1f1f1f"
-              data-lang="timeline-next-title"
-              >What’s Next</span
-            >
-            <span class="time-wrapper"
-              ><span
-                class="time"
-                style="background: #ffffff; color: #ff6d2e"
-                data-lang="timeline-next-time"
-                >Winter 2025</span
-              ></span
-            >
-          </div>
-          <div
-            class="desc"
-            style="color: #4a4a4a"
-            data-lang="timeline-next-text"
-          >
-            Make a first communication across the EU - Update our MVP to be a
-            Product through pilots
-          </div>
-        </div>
-      </li>
-    </ul>
+    @keyframes logoGlow {
+      from { filter: drop-shadow(0 0 30px rgba(255, 109, 46, 0.4)); }
+      to   { filter: drop-shadow(0 0 70px rgba(255, 109, 46, 0.7)); }
+    }
 
-    <br /><br /><br />
-    <div class="border-bottom" style="border-color: #4a4a4a"></div>
+    .message {
+      font-size: 2.4rem;
+      font-weight: 500;
+      letter-spacing: 0.8px;
+      color: #efeeec;
+      margin-bottom: 1.8rem;
+    }
 
-    <!-- Our Team section -->
-    <section id="team" class="bg-white py-5">
-      <div class="container px-5">
-        <h2
-          class="display-4 lh-1 mb-5 text-center"
-          style="color: #1f1f1f"
-          data-lang="team-title"
-        >
-          Our Team
-        </h2>
-        <div class="row g-4">
-          <div class="col-md-4 text-center">
-            <div
-              style="transition: transform 0.3s ease"
-              onmouseover="this.style.transform='translateY(-8px)';"
-              onmouseout="this.style.transform='translateY(0)';"
-            >
-              <div
-                style="
-                  position: relative;
-                  width: 130px;
-                  height: 130px;
-                  margin: 0 auto 15px;
-                "
-              >
-                <img
-                  src="assets/profileimages/panos.jpg"
-                  alt="Panagiotis Mavrikos"
-                  style="
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    border-radius: 50%;
-                    border: 3px solid #4a4a4a;
-                    transition: border-color 0.3s ease;
-                  "
-                  onmouseover="this.style.borderColor='#ff6d2e';"
-                  onmouseout="this.style.borderColor='#4a4a4a';"
-                />
-                <div
-                  style="
-                    position: absolute;
-                    top: -5px;
-                    left: -5px;
-                    width: 140px;
-                    height: 140px;
-                    border-radius: 50%;
-                    background: radial-gradient(
-                      circle,
-                      rgba(0, 0, 0, 0.2),
-                      transparent
-                    );
-                    z-index: -1;
-                  "
-                ></div>
-              </div>
-              <h5
-                style="color: #1f1f1f; font-size: 1.25rem; margin-bottom: 5px"
-              >
-                Panagiotis Mavrikos
-              </h5>
-              <p
-                style="color: #ff6d2e; font-size: 0.95rem; margin-bottom: 8px"
-                data-lang="team-panos-role"
-              >
-                Software Engineering
-              </p>
-              <p
-                style="
-                  color: #4a4a4a;
-                  font-size: 0.9rem;
-                  line-height: 1.5;
-                  margin: 0 auto 10px;
-                  max-width: 80%;
-                "
-                data-lang="team-panos-text"
-              >
-                Leads the development of Omnio’s core platform, ensuring
-                seamless integration for energy optimization
-              </p>
-              <a
-                href="https://www.linkedin.com/in/panagiotis-mavrikos/"
-                target="_blank"
-                aria-label="LinkedIn"
-                style="
-                  color: #4a4a4a;
-                  font-size: 1.2rem;
-                  transition: color 0.3s ease;
-                "
-                onmouseover="this.style.color='#ff6d2e';"
-                onmouseout="this.style.color='#4a4a4a';"
-                ><i class="bi bi-linkedin"></i
-              ></a>
-            </div>
-          </div>
-          <div class="col-md-4 text-center">
-            <div
-              style="
-                transition: transform 0.3s ease;
-                transform: translateY(20px);
-              "
-              onmouseover="this.style.transform='translateY(12px)';"
-              onmouseout="this.style.transform='translateY(20px)';"
-            >
-              <div
-                style="
-                  position: relative;
-                  width: 130px;
-                  height: 130px;
-                  margin: 0 auto 15px;
-                "
-              >
-                <img
-                  src="assets/profileimages/dionisia.jpg"
-                  alt="Dionisia Koronellou"
-                  style="
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    border-radius: 50%;
-                    border: 3px solid #4a4a4a;
-                    transition: border-color 0.3s ease;
-                  "
-                  onmouseover="this.style.borderColor='#ff6d2e';"
-                  onmouseout="this.style.borderColor='#4a4a4a';"
-                />
-                <div
-                  style="
-                    position: absolute;
-                    top: -5px;
-                    left: -5px;
-                    width: 140px;
-                    height: 140px;
-                    border-radius: 50%;
-                    background: radial-gradient(
-                      circle,
-                      rgba(0, 0, 0, 0.2),
-                      transparent
-                    );
-                    z-index: -1;
-                  "
-                ></div>
-              </div>
-              <h5
-                style="color: #1f1f1f; font-size: 1.25rem; margin-bottom: 5px"
-              >
-                Dionisia Koronellou
-              </h5>
-              <p
-                style="color: #ff6d2e; font-size: 0.95rem; margin-bottom: 8px"
-                data-lang="team-dionisia-role"
-              >
-                Business Development
-              </p>
-              <p
-                style="
-                  color: #4a4a4a;
-                  font-size: 0.9rem;
-                  line-height: 1.5;
-                  margin: 0 auto 10px;
-                  max-width: 80%;
-                "
-                data-lang="team-dionisia-text"
-              >
-                Drives Omnio’s market strategy, forging partnerships and
-                expanding our reach to businesses
-              </p>
-              <a
-                href="https://www.linkedin.com/in/dionisia-koronellou-75200b331/"
-                target="_blank"
-                aria-label="LinkedIn"
-                style="
-                  color: #4a4a4a;
-                  font-size: 1.2rem;
-                  transition: color 0.3s ease;
-                "
-                onmouseover="this.style.color='#ff6d2e';"
-                onmouseout="this.style.color='#4a4a4a';"
-                ><i class="bi bi-linkedin"></i
-              ></a>
-            </div>
-          </div>
-          <div class="col-md-4 text-center">
-            <div
-              style="transition: transform 0.3s ease"
-              onmouseover="this.style.transform='translateY(-8px)';"
-              onmouseout="this.style.transform='translateY(0)';"
-            >
-              <div
-                style="
-                  position: relative;
-                  width: 130px;
-                  height: 130px;
-                  margin: 0 auto 15px;
-                "
-              >
-                <img
-                  src="assets/profileimages/xristos.jpg"
-                  alt="Christos Ioannidis"
-                  style="
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    object-position: 25% 75%; /* Moves image up to center face */
-                    border-radius: 50%;
-                    border: 3px solid #4a4a4a;
-                    transition: border-color 0.3s ease;
-                  "
-                  onmouseover="this.style.borderColor='#ff6d2e';"
-                  onmouseout="this.style.borderColor='#4a4a4a';"
-                />
-                <div
-                  style="
-                    position: absolute;
-                    top: -5px;
-                    left: -5px;
-                    width: 140px;
-                    height: 140px;
-                    border-radius: 50%;
-                    background: radial-gradient(
-                      circle,
-                      rgba(0, 0, 0, 0.2),
-                      transparent
-                    );
-                    z-index: -1;
-                  "
-                ></div>
-              </div>
-              <h5
-                style="color: #1f1f1f; font-size: 1.25rem; margin-bottom: 5px"
-              >
-                Christos Ioannidis
-              </h5>
-              <p
-                style="color: #ff6d2e; font-size: 0.95rem; margin-bottom: 8px"
-                data-lang="team-christos-role"
-              >
-                Product Development
-              </p>
-              <p
-                style="
-                  color: #4a4a4a;
-                  font-size: 0.9rem;
-                  line-height: 1.5;
-                  margin: 0 auto 10px;
-                  max-width: 80%;
-                "
-                data-lang="team-christos-text"
-              >
-                Designs Omnio’s AI algorithms, optimizing energy schedules for
-                efficiency and continuously adaptability
-              </p>
-              <a
-                href="https://www.linkedin.com/in/christos-ioannidis-942bb6b8/"
-                target="_blank"
-                aria-label="LinkedIn"
-                style="
-                  color: #4a4a4a;
-                  font-size: 1.2rem;
-                  transition: color 0.3s ease;
-                "
-                onmouseover="this.style.color='#ff6d2e';"
-                onmouseout="this.style.color='#4a4a4a';"
-                ><i class="bi bi-linkedin"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="border-bottom" style="border-color: #4a4a4a"></div>
-    <!-- Contact Section -->
-    <section id="contact" class="bg-light">
-      <div class="container px-5">
-        <h2
-          class="display-4 lh-1 mb-4 text-center"
-          style="color: #1f1f1f"
-          data-lang="contact-title"
-        >
-          Let’s Talk
-        </h2>
-        <p
-          class="lead fw-normal mb-5 text-center"
-          style="color: #4a4a4a"
-          data-lang="contact-description"
-        >
-          Let’s discuss how Omnio can fit
-        </p>
-        <form
-          action="https://formspree.io/f/xanjeyep"
-          method="POST"
-          style="max-width: 600px; margin: 0 auto"
-        >
-          <div class="form-floating mb-3">
-            <input
-              class="form-control"
-              id="name"
-              name="name"
-              type="text"
-              required
-              placeholder="Enter your name..."
-              style="border-color: #4a4a4a; transition: border-color 0.3s ease"
-              onfocus="this.style.borderColor='#ff6d2e';"
-              onblur="this.style.borderColor='#4a4a4a';"
-              data-lang-placeholder="contact-name-placeholder"
-            />
-            <label
-              for="name"
-              style="color: #4a4a4a"
-              data-lang="contact-name-label"
-              >Name</label
-            >
-          </div>
-          <div class="form-floating mb-3">
-            <input
-              class="form-control"
-              id="email"
-              name="_replyto"
-              type="email"
-              required
-              placeholder="name@example.com"
-              style="border-color: #4a4a4a; transition: border-color 0.3s ease"
-              onfocus="this.style.borderColor='#ff6d2e';"
-              onblur="this.style.borderColor='#4a4a4a';"
-              data-lang-placeholder="contact-email-placeholder"
-            />
-            <label
-              for="email"
-              style="color: #4a4a4a"
-              data-lang="contact-email-label"
-              >Email address</label
-            >
-          </div>
-          <div class="form-floating mb-3">
-            <input
-              class="form-control"
-              id="phone"
-              name="phone"
-              type="tel"
-              placeholder="(123) 456-7890"
-              style="border-color: #4a4a4a; transition: border-color 0.3s ease"
-              onfocus="this.style.borderColor='#ff6d2e';"
-              onblur="this.style.borderColor='#4a4a4a';"
-              data-lang-placeholder="contact-phone-placeholder"
-            />
-            <label
-              for="phone"
-              style="color: #4a4a4a"
-              data-lang="contact-phone-label"
-              >Phone number</label
-            >
-          </div>
-          <div class="form-floating mb-3">
-            <textarea
-              class="form-control"
-              id="message"
-              name="message"
-              placeholder="Enter your message here..."
-              style="
-                height: 10rem;
-                border-color: #4a4a4a;
-                transition: border-color 0.3s ease;
-              "
-              required
-              onfocus="this.style.borderColor='#ff6d2e';"
-              onblur="this.style.borderColor='#4a4a4a';"
-              data-lang-placeholder="contact-message-placeholder"
-            ></textarea>
-            <label
-              for="message"
-              style="color: #4a4a4a"
-              data-lang="contact-message-label"
-              >Message</label
-            >
-          </div>
-          <div class="d-grid">
-            <button
-              class="btn btn-primary rounded-pill btn-lg"
-              type="submit"
-              style="
-                background: #ff6d2e;
-                border-color: #4a4a4a;
-                color: #ffffff;
-                transition: background 0.3s ease, transform 0.3s ease;
-              "
-              onmouseover="this.style.background='#ff6d2e'; this.style.transform='scale(1.05)';"
-              onmouseout="this.style.background='#ff6d2e'; this.style.transform='scale(1)';"
-              data-lang="contact-submit"
-            >
-              Submit
-            </button>
-          </div>
-        </form>
-      </div>
-    </section>
+    .coming {
+      font-size: 1.5rem;
+      font-weight: 300;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+      color: #4a4a4a;
+      animation: fade 4s ease-in-out 1s forwards;
+      opacity: 0;
+    }
 
-    <!-- Footer -->
-    <footer class="bg-black text-center py-5">
-      <div class="container px-5">
-        <div class="text-white-50 small">
-          <div class="mb-2" data-lang="footer-copyright">
-            © Omnio Website 2025. All Rights Reserved.
-          </div>
-          <a
-            href="faq.html"
-            style="
-              color: rgba(255, 255, 255, 0.5);
-              text-decoration: none;
-              transition: color 0.3s ease;
-            "
-            onmouseover="this.style.color='#ff6d2e';"
-            onmouseout="this.style.color='rgba(255, 255, 255, 0.5)';"
-            data-lang="footer-faq"
-            >FAQ</a
-          >
-        </div>
-        <img
-          src="assets/img/Omio logo.png"
-          alt="Laptop mockup"
-          style="max-width: 100px; transition: transform 0.3s ease"
-          onmouseover="this.style.transform='scale(1.1)';"
-          onmouseout="this.style.transform='scale(1)';"
-        />
-      </div>
-    </footer>
+    @keyframes fade {
+      to { opacity: 1; }
+    }
 
-    <!-- Core theme JS -->
-    <script src="js/scripts.js"></script>
-    <!-- SB Forms JS -->
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-  </body>
+    footer {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 0.95rem;
+      color: #4a4a4a;
+      letter-spacing: 1px;
+    }
+
+    /* Orange floating orbs */
+    .orbs {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .orb {
+      position: absolute;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255, 109, 46, 0.18), transparent 70%);
+      filter: blur(20px);
+      animation: rise 25s infinite linear;
+    }
+
+    @keyframes rise {
+      0%   { transform: translateY(100vh) translateX(-50%); opacity: 0; }
+      10%  { opacity: 0.6; }
+      90%  { opacity: 0.3; }
+      100% { transform: translateY(-200px) translateX(50%); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="orbs" id="orbs"></div>
+
+  <div class="scene">
+    <h1 class="logo">Omnio</h1>
+    <p class="message">Something is coming</p>
+    <p class="coming">Soon</p>
+  </div>
+
+  <footer>© 2025 Omnio</footer>
+
+  <script>
+    const container = document.getElementById('orbs');
+    const count = 9;
+
+    for (let i = 0; i < count; i++) {
+      const orb = document.createElement('div');
+      orb.classList.add('orb');
+
+      const size = Math.random() * 500 + 300;
+      const duration = Math.random() * 35 + 25;
+      const delay = Math.random() * 15;
+      const left = Math.random() * 100;
+
+      orb.style.width = size + 'px';
+      orb.style.height = size + 'px';
+      orb.style.left = left + 'vw';
+      orb.style.animationDuration = duration + 's';
+      orb.style.animationDelay = delay + 's';
+
+      container.appendChild(orb);
+    }
+  </script>
+</body>
 </html>
