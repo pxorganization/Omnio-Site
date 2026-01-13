@@ -83,17 +83,17 @@ document.addEventListener("DOMContentLoaded", () => {
   //     "how-it-works-title": "How It Works",
   //     "how-it-works-optimize-title": "Optimization",
   //     "how-it-works-optimize-text":
-  //       "Omnio creates a cost-effective weekly schedule tailored to your preferences and device availability, maximizing savings by using electricity when prices are lowest.",
+  //       "Omnyo creates a cost-effective weekly schedule tailored to your preferences and device availability, maximizing savings by using electricity when prices are lowest.",
   //     "how-it-works-adapt-title": "Real-Time Adaptation",
   //     "how-it-works-adapt-text":
-  //       "Omnio dynamically adjusts your schedule as energy prices and conditions change, ensuring continuous savings.",
+  //       "Omnyo dynamically adjusts your schedule as energy prices and conditions change, ensuring continuous savings.",
   //     "why-it-matters-title": "What You Gain",
   //     "how-it-works-simple-title": "Simple & Accessible",
   //     "how-it-works-simple-text":
-  //       "No technical skills required. Enter your preferences, and Omnio handles everything, delivering maximum results.",
+  //       "No technical skills required. Enter your preferences, and Omnyo handles everything, delivering maximum results.",
   //     "how-it-works-report-title": "Reports",
   //     "how-it-works-report-text":
-  //       "Omnio provides clear insights into energy usage, cost savings, and environmental impact through reports, enabling better decisions.",
+  //       "Omnyo provides clear insights into energy usage, cost savings, and environmental impact through reports, enabling better decisions.",
   //     "why-it-matters-save-title": "Save Money",
   //     "why-it-matters-save-text":
   //       "Electricity prices fluctuate. Appliances now run when costs are lowest, saving you money effortlessly.",
@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
   //     "why-it-matters-costs-text":
   //       "Track energy usage and savings continuously with full clarity.",
   //     "timeline-title": "Our Journey",
-  //     "timeline-founded-title": "Founded Omnio",
+  //     "timeline-founded-title": "Founded Omnyo",
   //     "timeline-founded-time": "May 2025",
   //     "timeline-founded-text":
   //       "We built our first prototype to demonstrate dynamic scheduling based on real-time electricity prices.",
@@ -123,13 +123,13 @@ document.addEventListener("DOMContentLoaded", () => {
   //     "team-title": "Our Team",
   //     "team-panos-role": "Software Engineering",
   //     "team-panos-text":
-  //       "Leads the development of Omnio’s core platform, ensuring seamless integration and robust performance for energy optimization.",
+  //       "Leads the development of Omnyo’s core platform, ensuring seamless integration and robust performance for energy optimization.",
   //     "team-dionisia-role": "Business Development",
   //     "team-dionisia-text":
-  //       "Drives Omnio’s market strategy, forging partnerships and expanding our reach to households and businesses.",
+  //       "Drives Omnyo’s market strategy, forging partnerships and expanding our reach to households and businesses.",
   //     "team-christos-role": "Product Development",
   //     "team-christos-text":
-  //       "Designs Omnio’s AI algorithms, optimizing energy schedules for efficiency and real-time adaptability.",
+  //       "Designs Omnyo’s AI algorithms, optimizing energy schedules for efficiency and real-time adaptability.",
   //     "contact-title": "Book a Demo",
   //     "contact-description": "Contact us for more information.",
   //     "contact-name-label": "Full Name",
@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
   //     "contact-message-label": "Message",
   //     "contact-message-placeholder": "Enter your message here...",
   //     "contact-submit": "Submit",
-  //     "footer-copyright": "© Omnio Website 2025. All Rights Reserved.",
+  //     "footer-copyright": "© Omnyo Website 2025. All Rights Reserved.",
   //     "footer-faq": "FAQ",
   //   },
   //   el: {
@@ -159,17 +159,17 @@ document.addEventListener("DOMContentLoaded", () => {
   //     "how-it-works-title": "Πώς Λειτουργεί",
   //     "how-it-works-optimize-title": "Βελτιστοποίηση",
   //     "how-it-works-optimize-text":
-  //       "Το Omnio δημιουργεί ένα οικονομικό εβδομαδιαίο πρόγραμμα προσαρμοσμένο στις προτιμήσεις και τη διαθεσιμότητα των συσκευών σας, μεγιστοποιώντας την εξοικονόμηση χρησιμοποιώντας ηλεκτρική ενέργεια όταν οι τιμές είναι χαμηλότερες.",
+  //       "Το Omnyo δημιουργεί ένα οικονομικό εβδομαδιαίο πρόγραμμα προσαρμοσμένο στις προτιμήσεις και τη διαθεσιμότητα των συσκευών σας, μεγιστοποιώντας την εξοικονόμηση χρησιμοποιώντας ηλεκτρική ενέργεια όταν οι τιμές είναι χαμηλότερες.",
   //     "how-it-works-adapt-title": "Προσαρμογή σε Πραγματικό Χρόνο",
   //     "how-it-works-adapt-text":
-  //       "Το Omnio προσαρμόζει δυναμικά το πρόγραμμά σας καθώς οι τιμές ενέργειας και οι συνθήθιες αλλάζουν, εξασφαλίζοντας συνεχή εξοικονόμηση.",
+  //       "Το Omnyo προσαρμόζει δυναμικά το πρόγραμμά σας καθώς οι τιμές ενέργειας και οι συνθήθιες αλλάζουν, εξασφαλίζοντας συνεχή εξοικονόμηση.",
   //     "why-it-matters-title": "Τι κερδίζετε",
   //     "how-it-works-simple-title": "Απλό & Προσιτό",
   //     "how-it-works-simple-text":
-  //       "Δεν απαιτούνται τεχνικές δεξιότητες. Εισάγετε τις προτιμήσεις σας και το Omnio αναλαμβάνει τα πάντα, παίρνωντας το μέγιστο αποτέλεσμα.",
+  //       "Δεν απαιτούνται τεχνικές δεξιότητες. Εισάγετε τις προτιμήσεις σας και το Omnyo αναλαμβάνει τα πάντα, παίρνωντας το μέγιστο αποτέλεσμα.",
   //     "how-it-works-report-title": "Αναφορές",
   //     "how-it-works-report-text":
-  //       "Το Omnio παρέχει σαφείς πληροφορίες για τη χρήση ενέργειας, την εξοικονόμηση κόστους και τον περιβαλλοντικό αντίκτυπο μέσω των αναφορών, παράγωντας καλύτερες αποφάσεις.",
+  //       "Το Omnyo παρέχει σαφείς πληροφορίες για τη χρήση ενέργειας, την εξοικονόμηση κόστους και τον περιβαλλοντικό αντίκτυπο μέσω των αναφορών, παράγωντας καλύτερες αποφάσεις.",
   //     "why-it-matters-save-title": "Εξοικονόμηση Χρημάτων",
   //     "why-it-matters-save-text":
   //       "Οι τιμές του ηλεκτρικού ρεύματος κυμαίνονται. Τώρα λειτουργούν όταν το κόστος είναι χαμηλότερο, εξοικονομώντας σας χρήματα χωρίς κόπο",
@@ -180,7 +180,7 @@ document.addEventListener("DOMContentLoaded", () => {
   //     "why-it-matters-costs-text":
   //       "Παρακολουθήστε τη χρήση ενέργειας και την εξοικονόμηση σας συνεχώς με πλήρη σαφήνεια.",
   //     "timeline-title": "Το Ταξίδι Μας",
-  //     "timeline-founded-title": "Ίδρυση της Omnio",
+  //     "timeline-founded-title": "Ίδρυση της Omnyo",
   //     "timeline-founded-time": "Μάιος 2025",
   //     "timeline-founded-text":
   //       "Κατασκευάσαμε το πρώτο μας πρωτότυπο για να παρουσιάσουμε τον δυναμικό προγραμματισμό βασισμένο στις τιμές της ηλεκτρικής ενέργειας σε πραγματικό χρόνο",
@@ -199,13 +199,13 @@ document.addEventListener("DOMContentLoaded", () => {
   //     "team-title": "Η Ομάδα Μας",
   //     "team-panos-role": "Software Engineering",
   //     "team-panos-text":
-  //       "Ηγείται της ανάπτυξης της βασικής πλατφόρμας της Omnio, εξασφαλίζοντας απρόσκοπτη ενσωμάτωση και robυστή απόδοση για τη βελτιστοποίηση ενέργειας.",
+  //       "Ηγείται της ανάπτυξης της βασικής πλατφόρμας της Omnyo, εξασφαλίζοντας απρόσκοπτη ενσωμάτωση και robυστή απόδοση για τη βελτιστοποίηση ενέργειας.",
   //     "team-dionisia-role": "Business Development",
   //     "team-dionisia-text":
-  //       "Οδηγεί τη στρατηγική της αγοράς της Omnio, δημιουργώντας συνεργασίες και επεκτείνοντας την εμβέλειά μας σε νοικοκυριά και επιχειρήσεις.",
+  //       "Οδηγεί τη στρατηγική της αγοράς της Omnyo, δημιουργώντας συνεργασίες και επεκτείνοντας την εμβέλειά μας σε νοικοκυριά και επιχειρήσεις.",
   //     "team-christos-role": "Product Development",
   //     "team-christos-text":
-  //       "Σχεδιάζει τους αλγορίθμους AI της Omnio, βελτιστοποιώντας τα προγράμματα ενέργειας για αποδοτικότητα και προσαρμοστικότητα σε πραγματικό χρόνο.",
+  //       "Σχεδιάζει τους αλγορίθμους AI της Omnyo, βελτιστοποιώντας τα προγράμματα ενέργειας για αποδοτικότητα και προσαρμοστικότητα σε πραγματικό χρόνο.",
   //     "contact-title": "Κλείστε ένα demo",
   //     "contact-description":
   //       "Επικοινωνήστε μαζί μας για περισσότερες πληροφορίες.",
@@ -218,7 +218,7 @@ document.addEventListener("DOMContentLoaded", () => {
   //     "contact-message-label": "Μήνυμα",
   //     "contact-message-placeholder": "Εισάγετε το μήνυμά σας εδώ...",
   //     "contact-submit": "Υποβολή",
-  //     "footer-copyright": "© Omnio Website 2025. All Rights Reserved",
+  //     "footer-copyright": "© Omnyo Website 2025. All Rights Reserved",
   //     "footer-faq": "Συχνές Ερωτήσεις",
   //   },
   // };

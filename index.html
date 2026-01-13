@@ -1,143 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Omnio • Coming Soon</title>
-  <meta name="description" content="Omnio – Something big is coming."/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Omnyo • Coming Soon</title>
+    <meta name="description" content="Omnyo – Something big is coming." />
 
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&display=swap');
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&display=swap");
 
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Inter', sans-serif;
-      height: 100vh;
-      overflow: hidden;
-      background: #1f1f1f;
-      color: #efeeec;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+        height: 100vh;
+        overflow: hidden;
+        background: #1f1f1f;
+        color: #efeeec;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
-    .scene {
-      text-align: center;
-      width: 100%;
-      position: relative;
-      z-index: 2;
-    }
+      .scene {
+        text-align: center;
+        width: 100%;
+        position: relative;
+        z-index: 2;
+      }
 
-    .logo {
-      font-size: 10vw;
-      font-weight: 900;
-      letter-spacing: -0.06em;
-      background: linear-gradient(90deg, #ff6d2e, #ff8c5a, #ffa270);
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      margin-bottom: 1.5rem;
-      animation: logoGlow 5s ease-in-out infinite alternate;
-    }
+      .logo {
+        font-size: 10vw;
+        font-weight: 900;
+        letter-spacing: -0.06em;
+        background: linear-gradient(90deg, #ff6d2e, #ff8c5a, #ffa270);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 1.5rem;
+        animation: logoGlow 5s ease-in-out infinite alternate;
+      }
 
-    @media (max-width: 768px) {
-      .logo { font-size: 15vw; }
-    }
+      @media (max-width: 768px) {
+        .logo {
+          font-size: 15vw;
+        }
+      }
 
-    @keyframes logoGlow {
-      from { filter: drop-shadow(0 0 30px rgba(255, 109, 46, 0.4)); }
-      to   { filter: drop-shadow(0 0 70px rgba(255, 109, 46, 0.7)); }
-    }
+      @keyframes logoGlow {
+        from {
+          filter: drop-shadow(0 0 30px rgba(255, 109, 46, 0.4));
+        }
+        to {
+          filter: drop-shadow(0 0 70px rgba(255, 109, 46, 0.7));
+        }
+      }
 
-    .message {
-      font-size: 2.4rem;
-      font-weight: 500;
-      letter-spacing: 0.8px;
-      color: #efeeec;
-      margin-bottom: 1.8rem;
-    }
+      .message {
+        font-size: 2.4rem;
+        font-weight: 500;
+        letter-spacing: 0.8px;
+        color: #efeeec;
+        margin-bottom: 1.8rem;
+      }
 
-    .coming {
-      font-size: 1.5rem;
-      font-weight: 300;
-      letter-spacing: 6px;
-      text-transform: uppercase;
-      color: #4a4a4a;
-      animation: fade 4s ease-in-out 1s forwards;
-      opacity: 0;
-    }
+      .coming {
+        font-size: 1.5rem;
+        font-weight: 300;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        color: #4a4a4a;
+        animation: fade 4s ease-in-out 1s forwards;
+        opacity: 0;
+      }
 
-    @keyframes fade {
-      to { opacity: 1; }
-    }
+      @keyframes fade {
+        to {
+          opacity: 1;
+        }
+      }
 
-    footer {
-      position: absolute;
-      bottom: 40px;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 0.95rem;
-      color: #4a4a4a;
-      letter-spacing: 1px;
-    }
+      footer {
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 0.95rem;
+        color: #4a4a4a;
+        letter-spacing: 1px;
+      }
 
-    /* Orange floating orbs */
-    .orbs {
-      position: absolute;
-      top: 0; left: 0; width: 100%; height: 100%;
-      pointer-events: none;
-      overflow: hidden;
-    }
+      /* Orange floating orbs */
+      .orbs {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        overflow: hidden;
+      }
 
-    .orb {
-      position: absolute;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(255, 109, 46, 0.18), transparent 70%);
-      filter: blur(20px);
-      animation: rise 25s infinite linear;
-    }
+      .orb {
+        position: absolute;
+        border-radius: 50%;
+        background: radial-gradient(
+          circle,
+          rgba(255, 109, 46, 0.18),
+          transparent 70%
+        );
+        filter: blur(20px);
+        animation: rise 25s infinite linear;
+      }
 
-    @keyframes rise {
-      0%   { transform: translateY(100vh) translateX(-50%); opacity: 0; }
-      10%  { opacity: 0.6; }
-      90%  { opacity: 0.3; }
-      100% { transform: translateY(-200px) translateX(50%); opacity: 0; }
-    }
-  </style>
-</head>
-<body>
+      @keyframes rise {
+        0% {
+          transform: translateY(100vh) translateX(-50%);
+          opacity: 0;
+        }
+        10% {
+          opacity: 0.6;
+        }
+        90% {
+          opacity: 0.3;
+        }
+        100% {
+          transform: translateY(-200px) translateX(50%);
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="orbs" id="orbs"></div>
 
-  <div class="orbs" id="orbs"></div>
+    <div class="scene">
+      <h1 class="logo">Omnyo</h1>
+      <p class="message">Something is coming</p>
+      <p class="coming">Soon</p>
+    </div>
 
-  <div class="scene">
-    <h1 class="logo">Omnio</h1>
-    <p class="message">Something is coming</p>
-    <p class="coming">Soon</p>
-  </div>
+    <footer>© 2025 Omnyo</footer>
 
-  <footer>© 2025 Omnio</footer>
+    <script>
+      const container = document.getElementById("orbs");
+      const count = 9;
 
-  <script>
-    const container = document.getElementById('orbs');
-    const count = 9;
+      for (let i = 0; i < count; i++) {
+        const orb = document.createElement("div");
+        orb.classList.add("orb");
 
-    for (let i = 0; i < count; i++) {
-      const orb = document.createElement('div');
-      orb.classList.add('orb');
+        const size = Math.random() * 500 + 300;
+        const duration = Math.random() * 35 + 25;
+        const delay = Math.random() * 15;
+        const left = Math.random() * 100;
 
-      const size = Math.random() * 500 + 300;
-      const duration = Math.random() * 35 + 25;
-      const delay = Math.random() * 15;
-      const left = Math.random() * 100;
+        orb.style.width = size + "px";
+        orb.style.height = size + "px";
+        orb.style.left = left + "vw";
+        orb.style.animationDuration = duration + "s";
+        orb.style.animationDelay = delay + "s";
 
-      orb.style.width = size + 'px';
-      orb.style.height = size + 'px';
-      orb.style.left = left + 'vw';
-      orb.style.animationDuration = duration + 's';
-      orb.style.animationDelay = delay + 's';
-
-      container.appendChild(orb);
-    }
-  </script>
-</body>
+        container.appendChild(orb);
+      }
+    </script>
+  </body>
 </html>
